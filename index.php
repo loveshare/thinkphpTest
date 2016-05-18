@@ -18,7 +18,7 @@ function reset_session_path()
     session_save_path($savePath); 
 }  
 
-
+//提交
 //只显示重要错误
 error_reporting(E_ERROR);
 
