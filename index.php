@@ -15,8 +15,9 @@ function reset_session_path()
     $savePath = $root . "/tmp/";
     if (!file_exists($savePath))
        @mkdir($savePath, 0777);
-    session_save_path($savePath);
-}
+    session_save_path($savePath); 
+}  
+
 
 //只显示重要错误
 error_reporting(E_ERROR);
@@ -26,7 +27,7 @@ error_reporting(E_ERROR);
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
-/*移除magic_quotes_gpc参数影响*/
+/*移除magic_quotes_gpc参数影响*/ 
 if (get_magic_quotes_gpc()) {
     function stripslashes_deep($value)
     {
