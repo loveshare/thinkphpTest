@@ -8,7 +8,7 @@
 // +----------------------------------------------------------------------
 
 // 应用入口文件
-// 
+
 require './headerFunction.php';
 
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
@@ -20,14 +20,12 @@ define('APP_PATH','./Application/');
 //设置模板目录
 define('TMPL_PATH','./Template/');
 
-if (!is_file( 'Conf/user.php')) {
+if (!is_file( APP_PATH.'/Conf/user.php')) {
     header('Location: ./install.php');
     exit;
 }
 
 /**
  * 引入核心入口
- * ThinkPHP亦可移动到WEB以外的目录
  */
-
-require './ThinkPHP/ThinkPHP11.php';
+require './ThinkPHP/ThinkPHP.php';
