@@ -2,12 +2,12 @@
 namespace Base\Controller;
 
 use Think\Controller;
-use Common\FunctionTrait\FunctionTrait;
 use Think\Storage;
 use Think\Hook;
+use Common\Traits\ClassTrait;
 
 class BaseController extends Controller {
-    use FunctionTrait;
+    use ClassTrait;
 
     /**
      * 视图实例对象
@@ -18,6 +18,12 @@ class BaseController extends Controller {
 
     protected $themei = null;
 
+    protected $classType = 'Controller';
+
+    protected $error = '';
+    protected $status = 'success';
+    protected $message = 'success';
+
     /**
      * 架构函数 取得模板对象实例
      * @access public
@@ -25,6 +31,9 @@ class BaseController extends Controller {
     public function __construct() {
         parent::__construct();
         //实例化视图类
+        //
+        $this->message = L('success');
+
         $this->viewi = new BaseView();
 
     }
@@ -32,6 +41,7 @@ class BaseController extends Controller {
     /**
      * 封装 theme 模板主题和 diplay 模板显示调用内置的抹布安引擎显示方法
      * 增加模板配置文件和
+     * @param array $options 自定义数据'customType'=>false,'dataType'=>'json'
      * @param string $theme 模版主题
      * @param string $templateFile 指定要调用的模板文件
      * 默认为空 由系统自动定位模板文件
@@ -41,10 +51,14 @@ class BaseController extends Controller {
      * @param string $prefix 模板缓存前缀
      * @return void
      */
-    protected function themeDisplay($theme='',$templateFile='',$charset='',$contentType='',$content='',$prefix=''){
+    protected function displayi($options = array(),$templateFile='',$charset='',$contentType='',$content='',$prefix=''){
 
         if(defined('TMPL_PATH')){
-            $this->viewi->display($templateFile,$charset,$contentType,$content,$prefix);
+
+            $this->viewi = $this->status;
+            $this->viewi = $this->message;
+
+            $this->viewi->display($options ,$templateFile,$charset,$contentType,$content,$prefix);
         }
         
         $this->view->display($templateFile,$charset,$contentType,$content,$prefix);
@@ -82,6 +96,22 @@ class BaseController extends Controller {
         $this->$themei = $theme;
         $this->viewi->theme($theme);
         return $this;
+    }
+
+    /**
+     * 模板变量赋值
+     * @access protected
+     * @param mixed $name 要显示的模板变量
+     * @param mixed $value 变量的值
+     * @return Action
+     */
+    protected function assigni($name,$value='') {
+        $this->viewi->assign($name,$value);
+        return $this;
+    }
+
+    public function ajaxReturni($data,$type='',$json_option=0){
+        $this->ajaxReturn($data,$type='',$json_option=0);
     }
 
 

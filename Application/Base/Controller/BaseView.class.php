@@ -7,9 +7,13 @@ use Think\Hook;
 
 class BaseView extends View {
 
+    public $status = '';
+    public $message = '';
+
 	/**
      * 加载模板和页面输出 可以返回输出内容
      * @access public
+     * @param array $options 自定义数据'customType'=>false,'dataType'=>'json'
      * @param string $templateFile 模板文件名
      * @param string $charset 模板输出字符集
      * @param string $contentType 输出类型
@@ -17,7 +21,27 @@ class BaseView extends View {
      * @param string $prefix 模板缓存前缀
      * @return mixed
      */
-    public function display($templateFile='',$charset='',$contentType='',$content='',$prefix='') {
+    public function display($options=array(),$templateFile='',$charset='',$contentType='',$content='',$prefix='') {
+
+        $default = array('customType'=>false,'dataType'=>'json');
+        $options = array_merge($default,$options);
+        /**
+         * JSON、JSONP、XML和EVAL
+         */
+        $dataType = I('param.returnType')?:$options['dataType'];
+        if($options['customType'] && $dataType){
+            $data = array(
+                'status'=> $this->status,
+                'message' => $this->message,
+                'data' => $this->tVar
+                );
+            $this->baseControlle()->ajaxReturni($data,$dataType);
+        }
+
+        $this->tVar['status'] = $this->status;
+        $this->tVar['message'] = $this->message;
+
+
         G('viewStartTime');
         // 视图开始标签
         Hook::listen('view_begin',$templateFile);
@@ -135,7 +159,7 @@ class BaseView extends View {
         $theme = $this->getTemplateTheme();
         // 获取当前主题的模版路径
         $tmplPath   =   C('VIEW_PATH'); // 模块设置独立的视图目录
-        if(!$tmplPath || defined('TMPL_PATH')){ 
+        if(!$tmplPath){ 
             // 定义TMPL_PATH 则改变全局的视图目录到模块之外
             $tmplPath   =   defined('TMPL_PATH')? TMPL_PATH.$theme.$module.'/' : APP_PATH.$module.'/'.C('DEFAULT_V_LAYER').'/';
         }
@@ -169,5 +193,9 @@ class BaseView extends View {
         }
         defined('THEME_NAME') || define('THEME_NAME',   $theme);                  // 当前模板主题名称
         return $theme?$theme . '/':'';
+    }
+
+    private function baseControlle(){
+        return (new BaseController);
     }
 }

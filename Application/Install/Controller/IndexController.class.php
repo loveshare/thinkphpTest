@@ -8,6 +8,8 @@ class IndexController extends BaseController{
 
     //安装
     public function index(){
+        GLOBAL $entry;
+        
        if(is_file( APP_PATH.'/Conf/user.php')){
             $msg = L('install_del_lock');
         }else{
@@ -16,7 +18,8 @@ class IndexController extends BaseController{
         if(Storage::has('Conf/install.lock')){
             $this->error($msg);
         }
-        $this->themeDisplay('default');
+
+        $this->displayi();
     }
 
     //完成
@@ -38,6 +41,6 @@ class IndexController extends BaseController{
         session('step', null);
         session('error', null);
         session('update',null);
-        $this->display();
+        $this->displayi();
     }
 }

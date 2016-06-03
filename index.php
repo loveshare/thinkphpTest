@@ -17,13 +17,16 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
 
-//设置模板目录
-define('TMPL_PATH','./Template/');
-
 if (!is_file( APP_PATH.'/Conf/user.php')) {
-    header('Location: ./install.php');
+    header('Location: /install.php');
     exit;
 }
+
+//设置模板目录
+if(!defined('CHANGE_ENTRY')){
+	define('TMPL_PATH','./Template/');
+}
+
 
 /**
  * 引入核心入口

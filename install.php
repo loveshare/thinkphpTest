@@ -11,11 +11,6 @@
 
 require './headerFunction.php';
 
-if (is_file( APP_PATH.'/Conf/user.php')) {
-    header('Location: ./index.php');
-    exit;
-}
-
 define('BIND_MODULE', 'Install');
 
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
@@ -23,9 +18,14 @@ define('APP_DEBUG',True);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
+define('CHANGE_ENTRY',true);
 
-//设置模板目录
-//define('TMPL_PATH','./Template/');
+$GLOBALS['entry'] = basename(__FILE__);
+
+if (is_file( APP_PATH.'/Conf/user.php')) {
+    header('Location: ./index.php');
+    exit;
+}
 
 /**
  * 引入核心入口
