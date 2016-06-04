@@ -1,51 +1,40 @@
 <!DOCTYPE html>
     <html>
-    <block name='var'></block>
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7;IE=9;IE=10;IE=Edge;IE=8">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><block name='title'></block></title>
-    <meta name="keywords" content="<block keywords><block>" />
-    <meta name="description" content="<block description><block>" />
-    <link rel="stylesheet" media="screen" href="" />
-    <block name='stylesheets'></block>
-    <!--[if lt IE 8]>
-      <link href="" rel="stylesheet">
-      <![endif]-->
-    <!--[if lt IE 9]>
-      <script src=""></script>
-      <![endif]-->
-      <!-- [if IE 8]
-      <script  src=""></script>
-      <![endif]-->
-    <block name='headScripts'></block>
-    </head>
-    <body class="{$bodyClss}">
-        <block name='body'>
-            <block name='header'>
+        <block name='var'></block>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7;IE=9;IE=10;IE=Edge;IE=8">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><block name='title'></block></title>
+        <meta name="keywords" content="<block keywords><block>" />
+        <meta name="description" content="<block description><block>" />
+        <link rel="stylesheet" media="screen" href="" />
+        <block name='stylesheets'></block>
+        <!--[if lt IE 8]><link href="" rel="stylesheet"><![endif]-->
+        <!--[if lt IE 9]><script src=""></script><![endif]-->
+        <!-- [if IE 8]<script  src=""></script><![endif]-->
+        <block name='headScripts'></block>
+        </head>
+        <body class="{$bodyClss}">
+            <block name='body'>
+                <block name='header'>
+                </block>
+                <block name='content'>
+                </block>
+                <block name='foot'>
+                </block>
             </block>
-            <block name='content'>
-            </block>
-            <block name='foot'>
-            </block>
-        </block>
-        
-    <div id="modal" class="modal" <notempty name="modalKeyBoard">data-keyboard="false"</notempty></div>
-    <block name='modal'>
-    </block>
-    
-    <block name='bottom'>
-    </block>
-        <script src="{$Think.config.PUBLIC_PATH}/jquery/jquery.min.js"></script>
-        <script src="{$Think.config.PUBLIC_PATH}/bootstrap/js/bootstrap.min.js"></script>
-
-        <script>
-            var themePath = '{$themePath}';
-            var public = '{$Think.config.PUBLIC_PATH}/';
-        </script>
-        <block name='footScripts'></block>
-    </body>
-    </block>
-</html>
+            
+            <div id="modal" class="modal" <notempty name="modalKeyBoard">data-keyboard="false"</notempty></div>
+            <block name='modal'></block>
+            <block name='bottom'></block>
+            <script src="{$Think.config.PUBLIC_PATH}/jquery/jquery.min.js"></script>
+            <script src="{$Think.config.PUBLIC_PATH}/bootstrap/js/bootstrap.min.js"></script>
+            <script>
+                var themePath = '{$themePath}';
+                var public = '{$Think.config.PUBLIC_PATH}/';
+            </script>
+            <block name='footScripts'></block>
+        </body>
+    </html>
