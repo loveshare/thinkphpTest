@@ -21,7 +21,7 @@ class BaseView extends View {
      * @param string $prefix 模板缓存前缀
      * @return mixed
      */
-    public function display($options=array(),$templateFile='',$charset='',$contentType='',$content='',$prefix='') {
+    public function displayi($options=array(),$templateFile='',$charset='',$contentType='',$content='',$prefix='') {
 
         $default = array('customType'=>false,'dataType'=>'json');
         $options = array_merge($default,$options);
@@ -46,7 +46,7 @@ class BaseView extends View {
         // 视图开始标签
         Hook::listen('view_begin',$templateFile);
         // 解析并获取模板内容
-        $content = $this->fetch($templateFile,$content,$prefix);
+        $content = $this->fetchi($templateFile,$content,$prefix);
         // 输出模板内容
         $this->baseRender($content,$charset,$contentType);
         // 视图结束标签
@@ -81,13 +81,13 @@ class BaseView extends View {
      * @param string $prefix 模板缓存前缀
      * @return string
      */
-    public function fetch($templateFile='',$content='',$prefix='') {
+    public function fetchi($templateFile='',$content='',$prefix='') {
         if(empty($content)) {
-            $templateFile   =   $this->parseTemplate($templateFile);
+            $templateFile   =   $this->parseTemplatei($templateFile);
             // 模板文件不存在直接返回
             if(!is_file($templateFile)) E(L('_TEMPLATE_NOT_EXIST_').':'.$templateFile);
         }else{
-            defined('THEME_PATH') or    define('THEME_PATH', $this->getThemePath());
+            defined('THEME_PATH') or    define('THEME_PATH', $this->getThemePathi());
         }
         // 页面缓存
         ob_start();
@@ -117,7 +117,7 @@ class BaseView extends View {
      * @param string $template 模板文件规则
      * @return string
      */
-    public function parseTemplate($template='') {
+    public function parseTemplatei($template='') {
 
         if(is_file($template)) {
             return $template;
@@ -131,7 +131,7 @@ class BaseView extends View {
             list($module,$template)  =   explode('@',$template);
         }
         // 获取当前主题的模版路径
-        defined('THEME_PATH') or    define('THEME_PATH', $this->getThemePath($module));
+        defined('THEME_PATH') or    define('THEME_PATH', $this->getThemePathi($module));
 
         // 分析模板文件规则
         if('' == $template) {
@@ -154,17 +154,49 @@ class BaseView extends View {
      * @param  string $module 模块名
      * @return string
      */
-    protected function getThemePath($module=MODULE_NAME){
+    protected function getThemePathi($module=MODULE_NAME){
         // 获取当前主题名称
-        $theme = $this->getTemplateTheme();
+        $theme = $this->getTemplateThemei();
         // 获取当前主题的模版路径
         $tmplPath   =   C('VIEW_PATH'); // 模块设置独立的视图目录
         if(!$tmplPath){ 
             // 定义TMPL_PATH 则改变全局的视图目录到模块之外
             $tmplPath   =   defined('TMPL_PATH')? TMPL_PATH.$theme.$module.'/' : APP_PATH.$module.'/'.C('DEFAULT_V_LAYER').'/';
         }
-
+        $tmplPath = 1;
+        
+        $this->setVarThemePath($tmplPath);
         return $tmplPath;
+    }
+
+    /**
+     * 获取当前的模板路径
+     * @access protected
+     * @param  string $module 模块名
+     * @return string
+     */
+    protected function getThemePath($module=MODULE_NAME){
+        parent::getThemePath($module);
+        // 获取当前主题名称
+        $theme = $this->getTemplateTheme();
+        // 获取当前主题的模版路径
+        $tmplPath   =   C('VIEW_PATH'); // 模块设置独立的视图目录
+        if(!$tmplPath){ 
+            // 定义TMPL_PATH 则改变全局的视图目录到模块之外
+            $tmplPath   =   defined('TMPL_PATH')? TMPL_PATH.$module.'/' : APP_PATH.$module.'/'.C('DEFAULT_V_LAYER').'/';
+        }
+        
+        $this->setVarThemePath($tmplPath);
+        return $tmplPath.$theme;
+    }
+
+    /**
+     * 设置模板路径变量
+     * @param [string] $tmplPath 模板路径
+     */
+    public function setVarThemePath($tmplPath){
+        $tmplPath = str_replace('./', '/', $tmplPath);
+        $this->assign('themePath',$tmplPath);
     }
 
     /**
@@ -172,7 +204,7 @@ class BaseView extends View {
      * @access private
      * @return string
      */
-    private function getTemplateTheme() {
+    private function getTemplateThemei() {
         if($this->theme) { // 指定模板主题
             $theme = $this->theme;
         }else{

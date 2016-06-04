@@ -1,0 +1,44 @@
+{   //0 = ignore, 1 = warning, 2 = error
+    "env": {
+        "browser": true,
+        "node": true,
+        "phantomjs": true
+    },
+    "globals": {
+        "window": false,
+        "event": true,
+        "Comment": true,
+    },
+    "rules": {
+        "camelcase": 2,
+        "comma-dangle": [2, "never"],
+        "curly": 2,
+        "dot-notation": 2,
+        "indent": [2, 4],
+        "eqeqeq": 2,
+        "keyword-spacing": 2,
+        "linebreak-style": [2, "unix"],
+        "max-len": [2, 100],
+        "max-params": [2, 6],
+        "new-cap": [2, {"capIsNew" : false}],
+        "no-alert": 2,
+        "no-caller": 2,
+        "no-console": 2,
+        "no-debugger": 2,
+        "no-eval": 2,
+        "no-extend-native": 2,
+        "no-irregular-whitespace": 2,
+        "no-new": 2,
+        "no-proto": 2,
+        "no-trailing-spaces": 2,
+        "no-undef": 2,
+        "no-undef-init": 2,
+        "no-unused-vars": 2,
+        "object-curly-spacing": [2, "always"],
+        "semi": [2, "always"],
+        "space-in-parens": [2, "never"],
+        "strict": [2, "global"],
+        "quotes" : [2, "single"]
+    },
+    "extends": "eslint:recommended"
+}

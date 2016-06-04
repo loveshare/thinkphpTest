@@ -35,7 +35,6 @@ class BaseController extends Controller {
         $this->message = L('success');
 
         $this->viewi = new BaseView();
-
     }
 
     /**
@@ -58,10 +57,10 @@ class BaseController extends Controller {
             $this->viewi = $this->status;
             $this->viewi = $this->message;
 
-            $this->viewi->display($options ,$templateFile,$charset,$contentType,$content,$prefix);
+            $this->viewi->displayi($options ,$templateFile,$charset,$contentType,$content,$prefix);
         }
         
-        $this->view->display($templateFile,$charset,$contentType,$content,$prefix);
+        $this->viewi->display($templateFile,$charset,$contentType,$content,$prefix);
 
      //    $themePath = TMPL_PATH.'config.php';
 
@@ -90,10 +89,10 @@ class BaseController extends Controller {
      * @return Action
      */
     protected function themei($theme=''){
-        if(empty($theme) && empty($this->$baseTheme)){
+        if(empty($theme) && empty($this->baseTheme())){
             $theme = 'default';
         }
-        $this->$themei = $theme;
+        
         $this->viewi->theme($theme);
         return $this;
     }

@@ -18,7 +18,7 @@ class View {
      * @var tVar
      * @access protected
      */ 
-    protected $tVar     =   array();
+    public $tVar     =   array();
 
     /**
      * 模板主题
@@ -203,7 +203,7 @@ class View {
      * @access private
      * @return string
      */
-    private function getTemplateTheme() {
+    public function getTemplateTheme() {
         if($this->theme) { // 指定模板主题
             $theme = $this->theme;
         }else{

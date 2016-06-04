@@ -23,8 +23,8 @@ class BaseModel extends Model {
      * @param string $select 选择自动验证 自动完成
      * @return mixed
      */
-     public function createi($data='',$type='' ,$select='') {
-     	if($select && !empty($this->$select)){
+     public function createi($data='',$type='' ,$selecti='') {
+     	if($selecti && !empty($this->$selecti)){
 
      		if($this->$select['_validate'])
      			$this->_validate = $this->$select['validate'];
@@ -33,11 +33,9 @@ class BaseModel extends Model {
      			$this->_auto = $this->$select['_auto'];
      	}else{
 
-     		if($this->_validatei)
-     			$this->_validate = $this->_validatei;
+     		$this->_validate = $this->_validatei?:$this->_validate;
 
-     		if($this->_autoi)
-     			$this->_auto = $this->_autoi;
+     		$this->_auto = $this->_autoi?:$this->_auto;
      	}
 
      	return $this->create($data,$type);
