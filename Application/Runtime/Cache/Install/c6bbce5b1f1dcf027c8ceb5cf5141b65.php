@@ -27,7 +27,6 @@
       <![endif]-->
     
     </head>
-    <block>
     <body class="<?php echo ($bodyClss); ?>">
         
             
@@ -38,8 +37,10 @@
             
         
         
-            <div id="modal" class="modal" <?php if(!empty($modalKeyBoard)): ?>data-keyboard="false"<?php endif; ?></div>
-        </block>
+        <div id="modal" class="modal" <?php if(!empty($modalKeyBoard)): ?>data-keyboard="false"<?php endif; ?></div>
+    
+    <block name = 'bottom'>
+    </block>
         <script src="<?php echo (C("PUBLIC_PATH")); ?>/jquery/jquery.min.js"></script>
         <script src="<?php echo (C("PUBLIC_PATH")); ?>/bootstrap/js/bootstrap.min.js"></script>
 
