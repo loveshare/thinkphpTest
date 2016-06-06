@@ -137,7 +137,7 @@
         },
 
         serialize: function()
-        {
+        {	console.log('serialize');
             var data,
                 depth = 0,
                 list  = this;
@@ -286,7 +286,7 @@
         },
 
         dragStop: function(e)
-        {
+        {   console.log('dragStop');
             var el = this.dragEl.children(this.options.itemNodeName).first();
             el[0].parentNode.removeChild(el[0]);
             this.placeEl.replaceWith(el);
