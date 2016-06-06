@@ -58,6 +58,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="text-center"><?php echo (L("title")); ?></h1>
+				<block name="control">
 				<p><?php echo (L("welcome")); ?></p>
 				<?php echo (L("installNeed")); ?>
 				<?php echo (L("introduction")); ?>
@@ -66,10 +67,7 @@
 						<?php echo (L("nowInstall")); ?>
 					</a>
 				</p>
-			</div>
-		</div>
-	</div>	
-
+				
             
 	<footer></footer>
 

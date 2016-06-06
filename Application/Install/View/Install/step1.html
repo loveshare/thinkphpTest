@@ -1,58 +1,125 @@
 <extend name="Install@Index/index" />
 <block name='var'>
-<assign name="bodyClss" value="body" />
-<assign name="htmlClss" value="html" />
+	<assign name="publicScript[]" value="validator/js/bootstrapValidator.min" />
+	<assign name="publicCss[]" value="validator/css/bootstrapValidator.min" />
 </block>
 <block name='title'>
-{$Think.lang.title}
+调整配置文件
 </block>
-<block name='keywords'></block>
-<block name='description'></block>
-<block name='stylesheets'></block>
-
-<block name="header">
-	<header>
-		<div class="navbar navbar-inverse noRadius">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          <a class="navbar-brand hidden-sm active">{$Think.lang.title}</a>
-	        </div>
-	        <div class="navbar-collapse collapse" role="navigation">
-	          <ul class="nav navbar-nav">
-	            <li class="hidden-sm hidden-md"><a href="#" target="_blank" >Bootstrap2中文文档</a></li>
-	          </ul>
-	        </div>
-	      </div>
-	    </div>
-	</header>
+<block name="control">
+	<h4 class="text-primary">设置您的数据库连接</h4>
+	<form method="post" id="dataForm" class="form-horizontal" action="{:U('Install/Install/step',array('step'=>2))}" novalidate="novalidate">
+		<p>请在下方填写您的数据库连接信息。如果您不确定，请联系您的服务提供商。</p>
+		<div class="form-group has-feedback">
+            <label class="col-lg-3 control-label">数据库名</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="dbname" data-bv-field="dbname" placeholder="将程序安装到哪个数据库？">
+              </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-3 control-label">用户名</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="uname" data-bv-field="uname" placeholder="您的数据库用户名。">
+             </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-3 control-label">密码</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="pwd" data-bv-field="pwd" placeholder="您的数据库密码。">
+             </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-3 control-label">数据库主机</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="dbhost" data-bv-field="dbhost" placeholder="一般使用localhost">
+             </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-3 control-label">域名</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="domain" data-bv-field="domain" placeholder="网站使用的域名">
+             </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="col-lg-3 control-label">siteCode</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="网站的识别码">
+             </div>
+        </div>
+		<p class="step">
+		<button type="submit" class="btn btn-primary">提交</button></p>
+	</form>
 </block>
-<block name="content">
-	<div class="container border-ltrb border-muted border-size-1">
-		<div class="row">
-			<div class="col-md-12">
-				<h1 class="text-center">{$Think.lang.title}</h1>
-				<p>{$Think.lang.welcome}</p>
-				{$Think.lang.installNeed}
-				{$Think.lang.introduction}
-				<p>
-					<a type="button" class="btn btn-primary" href="{:U('Install/Install/step',array('step'=>1))}">
-						{$Think.lang.nowInstall}
-					</a>
-				</p>
-			</div>
-		</div>
-	</div>	
+<block name='footScripts'>
+	<script>
+		(function($){
+		    $('#dataForm').bootstrapValidator({
+		        message: '这个选项未通过验证',
+		        feedbackIcons: {
+		            valid: 'glyphicon glyphicon-ok',
+		            invalid: 'glyphicon glyphicon-remove',
+		            validating: 'glyphicon glyphicon-refresh'
+		        },
+		        fields: {
+		            dbname: {
+		                message: '这个选项未通过验证',
+		                validators: {
+		                    notEmpty: {
+		                        message: '不能为空'
+		                    },
+		                    stringLength: {
+		                        min: 6,
+		                        max: 30,
+		                        message: '长度不小于6,不大于30'
+		                    },
+		                    regexp: {
+		                        regexp: /^[a-zA-Z0-9_]+$/,
+		                        message: '只能包含字母和数字'
+		                    }
+		                }
+		            },
+		            uname: {
+		                message: '这个选项未通过验证',
+		                validators: {
+		                    notEmpty: {
+		                        message: '不能为空'
+		                    },
+		                    regexp: {
+		                        regexp: /^[a-zA-Z0-9_]+$/,
+		                        message: '只能包含字母和数字'
+		                    }
+		                }
+		            },
+		            pwd: {
+		                validators: {
+		                    notEmpty: {
+		                        message: '不能为空'
+		                    }
+		                }
+		            },
+		            dbhost: {
+		                validators: {
+		                    notEmpty: {
+		                        message: '不能为空'
+		                    }
+		                }
+		            },
+		            domain: {
+		                validators: {
+		                    notEmpty: {
+		                        message: '不能为空'
+		                    }
+		                }
+		            },
+		            siteCode: {
+		                validators: {
+		                    notEmpty: {
+		                        message: '不能为空'
+		                    }
+		                }
+		            },
+		        }
+		    });
+		})(jQuery);
+	</script>
 </block>
-<block name="foot">
-	<footer></footer>
-</block>
-
-<block name="modal"></block>
-<block name="bottom"></block>
-<block name="footScripts"></block>

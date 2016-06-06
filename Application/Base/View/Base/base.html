@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+    <block name='baseVar'></block>
     <block name='var'></block>
     <html class="{$htmlClss}">
         <head>
@@ -10,12 +11,6 @@
         <title><block name='title'></block></title>
         <meta name="keywords" content="<block name='keywords'></block>" />
         <meta name="description" content="<block name='description'></block>" />
-        <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/css/theme.css" />
-        <block name='stylesheets'>
-            
-        </block>
         <!--[if lt IE 9]>
             <script src="{$Think.config.PUBLIC_PATH}/js/ie8-responsive-file-warning.js"></script>
         <![endif]-->
@@ -24,6 +19,37 @@
             <script src="{$Think.config.PUBLIC_PATH}/js/html5shiv.min.js"></script>
             <script src="{$Think.config.PUBLIC_PATH}/js/respond.min.js"></script>
         <![endif]-->
+        <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/css/theme.css" />
+        <?php
+            //加载公共js
+            if(!empty($publicCss)){
+                foreach($publicCss as $k=>$v){
+                    if($v)
+                        echo "<link href='",C('PUBLIC_PATH'),"/",$v,".css' />";
+                }
+            }
+            //加载模板js
+            if(!empty($themeCss)){
+                foreach($themeCss as $k=>$v){
+                    if($v)
+                        echo "<link href='",$themePath,"/",$v,".css' />";
+                }
+            }
+            //加载外部
+            if(!empty($loadCss)){
+                foreach($loadScript as $k=>$v){
+                    if($v)
+                        echo "<link href='",$v,"' />";
+                }
+            }
+            //加载style
+            if(!empty($styleCss)){
+                echo "<style>",$style,"</style>";
+            }
+        ?>
+        <block name='stylesheets'></block>
         <block name='headScripts'></block>
         </head>
         <body class="{$bodyClss}">
@@ -32,7 +58,7 @@
             <block name="content"></block>
             <block name="foot"></block>
             
-            <div id="modal" class="modal" <notempty name="modalKeyBoard">data-keyboard="false"</notempty></div>
+            <div id="modal" class="modal" <notempty name="modalKeyBoard">data-keyboard="false"</notempty>></div>
             <block name="modal"></block>
             <block name="bottom"></block>
             <script src="{$Think.config.PUBLIC_PATH}/jquery/jquery.min.js"></script>
@@ -41,7 +67,44 @@
             <script>
                 var themePath = '{$themePath}';
                 var public = '{$Think.config.PUBLIC_PATH}/';
+                <?php
+                    //添加 script var 变量
+                    if(!empty($varScript)){
+                        foreach($varScript as $k=>$v){
+                            if($v)
+                                echo 'var ',$v,';';
+                        }
+                    }
+
+                    //script code
+                    if(!empty($codeScript)){
+                        echo $codeScript;
+                    }
+                ?>
             </script>
+            <?php
+                //加载公共js
+                if(!empty($publicScript)){
+                    foreach($publicScript as $k=>$v){
+                        if($v)
+                            echo "<script src='",C('PUBLIC_PATH'),"/",$v,".js'></script>";
+                    }
+                }
+                //加载模板js
+                if(!empty($themeScript)){
+                    foreach($themeScript as $k=>$v){
+                        if($v)
+                            echo "<script src='",$themePath,"/",$v,".js'></script>";
+                    }
+                }
+                //加载外部
+                if(!empty($loadScript)){
+                    foreach($loadScript as $k=>$v){
+                        if($v)
+                            echo "<script src='",$v,"'></script>";
+                    }
+                }
+            ?>
             <block name='footScripts'></block>
         </body>
     </html>
