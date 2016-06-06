@@ -1,0 +1,23 @@
+.noRadius{border-radius:0px}
+.html {background: #f1f1f1;}
+.body {background: #f1f1f1;}
+
+.border-ltrb{border-left-style:solid;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;}
+.border-lrb{border-left-style:solid;border-right-style:solid;border-bottom-style:solid;}
+.border-b{border-bottom-style:solid;}
+.border-lr{border-left-style:solid;border-right-style:solid;}
+.border-t{border-top-style:solid;}
+.border-muted { border-color: #777;}
+.border-primary { border-color: #337ab7;}
+.border-success { border-color: #3c763d;}
+.border-text-info { border-color: #31708f;}
+.border-text-warning { border-color: #8a6d3b;}
+.border-text-danger { border-color: #a94442;}
+.border-size-1{border-width:1px;}
+.border-size-2{border-width:2px;}
+.border-size-3{border-width:3px;}
+
+.padding-t-10{padding-top: 10px;}
+.padding-t-15{padding-top: 15px;}
+.padding-b-10{padding-bottom: 10px;}
+.padding-b-15{padding-bottom: 15px;}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-    <html>
-        <block name='var'></block>
+    <block name='var'></block>
+    <html class="{$htmlClss}">
         <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=7;IE=9;IE=10;IE=Edge;IE=8">
@@ -12,6 +12,7 @@
         <meta name="description" content="<block name='description'></block>" />
         <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" media="screen" href="{$Think.config.PUBLIC_PATH}/css/theme.css" />
         <block name='stylesheets'>
             
         </block>
@@ -26,18 +27,14 @@
         <block name='headScripts'></block>
         </head>
         <body class="{$bodyClss}">
-            <block name='body'>
-                <block name='header'>
-                </block>
-                <block name='content'>
-                </block>
-                <block name='foot'>
-                </block>
-            </block>
+            
+            <block name="header"></block>
+            <block name="content"></block>
+            <block name="foot"></block>
             
             <div id="modal" class="modal" <notempty name="modalKeyBoard">data-keyboard="false"</notempty></div>
-            <block name='modal'></block>
-            <block name='bottom'></block>
+            <block name="modal"></block>
+            <block name="bottom"></block>
             <script src="{$Think.config.PUBLIC_PATH}/jquery/jquery.min.js"></script>
             <script src="{$Think.config.PUBLIC_PATH}/bootstrap/js/bootstrap.min.js"></script>
             <script src="{$Think.config.PUBLIC_PATH}/js/ie10-viewport-bug-workaround.js"></script>

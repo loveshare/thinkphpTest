@@ -1,28 +1,58 @@
 <extend name="Base@Base/base" />
 <block name='var'>
-<assign name="bodyClss" value="bodyClss" />
+<assign name="bodyClss" value="body" />
+<assign name="htmlClss" value="html" />
 </block>
 <block name='title'>
 {$Think.lang.title}
 </block>
+<block name='keywords'></block>
+<block name='description'></block>
+<block name='stylesheets'></block>
 
-<p>欢迎使用WordPress。在开始前，我们需要您数据库的一些信息。请准备好如下信息。</p>
-<ol>
-	<li>数据库名</li>
-	<li>数据库用户名</li>
-	<li>数据库密码</li>
-	<li>数据库主机</li>
-	<li>数据表前缀（table prefix，特别是当您要在一个数据库中安装多个WordPress时）</li>
-</ol>
-<p>我们会使用这些信息来创建一个<code>wp-config.php</code>文件。	<strong>如果自动创建未能成功，不用担心，您要做的只是将数据库信息填入配置文件。您也可以在文本编辑器中打开<code>wp-config-sample.php</code>，填入您的信息，并将其另存为<code>wp-config.php</code>。</strong>
-	需要更多帮助？<a href="https://codex.wordpress.org/zh-cn:%E7%BC%96%E8%BE%91_wp-config.php">看这里</a>。</p>
-<p>绝大多数时候，您的网站服务提供商会给您这些信息。如果您没有这些信息，在继续之前您将需要联系他们。如果您准备好了…</p>
+<block name="header">
+	<header>
+		<div class="navbar navbar-inverse noRadius">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand hidden-sm active">{$Think.lang.title}</a>
+	        </div>
+	        <div class="navbar-collapse collapse" role="navigation">
+	          <ul class="nav navbar-nav">
+	            <li class="hidden-sm hidden-md"><a href="#" target="_blank" >Bootstrap2中文文档</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	</header>
+</block>
+<block name="content">
+	<div class="container border-ltrb border-muted border-size-1">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">{$Think.lang.title}</h1>
+				<p>{$Think.lang.welcome}</p>
+				{$Think.lang.installNeed}
+				{$Think.lang.introduction}
+				<p>
+					<a type="button" class="btn btn-primary" href="{:U('Install/Install/step',array('step'=>1))}">
+						{$Think.lang.nowInstall}
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>	
+</block>
+<block name="foot">
+	<footer></footer>
+</block>
 
-<p class="step"><a href="setup-config.php?step=1&amp;language=zh_CN" class="button button-large">现在就开始！</a></p>
-<script type='text/javascript' src='http://wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
-<script type='text/javascript' src='http://wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
-<script type='text/javascript' src='http://wordpress/wp-admin/js/language-chooser.min.js?ver=4.5.1'></script>
-
-
-
-
+<block name="modal"></block>
+<block name="bottom"></block>
+<block name="footScripts"></block>

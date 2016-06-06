@@ -203,7 +203,7 @@ class View {
      * @access private
      * @return string
      */
-    public function getTemplateTheme() {
+    protected function getTemplateTheme() {
         if($this->theme) { // 指定模板主题
             $theme = $this->theme;
         }else{

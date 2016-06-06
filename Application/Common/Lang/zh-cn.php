@@ -6,7 +6,6 @@ return array(
 	'youUse' => '您当前正在使用<strong>'.__VERSION__.'</strong>版'.__NAME__.'。',
 	'agree' => '同意',
 	'disagree' => '不同意',
-	'nowInstall' => '现在安装！',
 	'success' => '成功！',
 	
 );

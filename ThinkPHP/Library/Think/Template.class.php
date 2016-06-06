@@ -258,6 +258,8 @@ class  Template {
             $content    =   $this->parseInclude($content, false); //对继承模板中的include进行分析
             // 替换block标签
             $content = $this->replaceBlock($content);
+            // 递归解析，支持多层继承
+            $content = $this->parseExtend($content);
         }else{
             $content    =   preg_replace_callback('/'.$begin.'block\sname=[\'"](.+?)[\'"]\s*?'.$end.'(.*?)'.$begin.'\/block'.$end.'/is', function($match){return stripslashes($match[2]);}, $content);
         }
@@ -346,7 +348,7 @@ class  Template {
         } elseif(is_array($content)){
             if(preg_match('/'.$begin.'block\sname=[\'"](.+?)[\'"]\s*?'.$end.'/is', $content[3])){ //存在嵌套，进一步解析
                 $parse = 1;
-                $content[3] = preg_replace_callback($reg, array($this, 'replaceBlock'), "{$content[3]}{$begin}/block{$end}");
+                $content[0] = preg_replace_callback($reg, array($this, 'replaceBlock'), "{$content[3]}{$begin}/block{$end}");
                 return $content[1] . $content[3];
             } else {
                 $name    = $content[2];

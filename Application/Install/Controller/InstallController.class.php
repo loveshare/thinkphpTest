@@ -23,7 +23,7 @@ class InstallController extends BaseController{
 
     public function step($step){
         $func = 'step'.$step;
-        print_r((new Check())->checkEnv());
+
         $this->$func();
     }
 
@@ -31,22 +31,14 @@ class InstallController extends BaseController{
     private function step1(){
         session('error', false);
 
-        //环境检测
-        $env = check_env();
-
         //目录文件读写检测
         if(IS_WRITE){
             $dirfile = check_dirfile();
             $this->assign('dirfile', $dirfile);
         }
-        
-        //函数检测
-        $func = check_func();
 
         session('step', 1);
 
-        $this->assign('env', $env);
-        $this->assign('func', $func);
         $this->displayi(array(),__FUNCTION__);
     }
 
