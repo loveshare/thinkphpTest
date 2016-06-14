@@ -2,7 +2,7 @@
 namespace Common\Traits;
 
 Trait ClassTrait {
-	
+
 	/**
 	 * [实例化 common 下的模]
 	 * @param  [string] $name [模块目录.模块]
@@ -30,23 +30,22 @@ Trait ClassTrait {
 	 * @param  string  $goto     消息跳转的页面
 	 * @return Response
 	 */
-	public function createMeseage($status='success', $message, $title = '', $duration = 0, $goto = null) {
+	public function createMeseage($status='success', $message='', $title = '', $duration = 0, $goto = null) {
 
 		$mold = array('info', 'warning', 'error', 'success');
-		$type = in_array($type, $mold) ? $type : 'success';
-
+		$status = in_array($status, $mold) ? $status : 'success';
+		$title = $title?:L($status);
 		$data = array(
+			'status'    => $status,
+			'message'     => $message,
 			'title'    => $title,
-			'duration' => $duration,
 			'goto'     => $goto,
 		);
 
 		$this->assign($data);
-		$this->status = $status;
-        $this->message = $message;
 		//$this->display('./Template/Public/menu.html');
 		if($this->classType == 'Controller'){
-			return $this->displayi(array('customType'=>true,'dataType'=>'json'),'Home@Default:message');
+			return $this->displayi('Home@Default:message');
 		}else{
 			return E($message);
 		}
