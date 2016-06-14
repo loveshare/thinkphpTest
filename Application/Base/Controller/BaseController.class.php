@@ -13,7 +13,7 @@ class BaseController extends Controller {
      * 视图实例对象
      * @var view
      * @access protected
-     */    
+     */
     protected $viewi     =  null;
 
     protected $themei = null;
@@ -21,8 +21,8 @@ class BaseController extends Controller {
     protected $classType = 'Controller';
 
     protected $error = '';
-    protected $status = 'success';
-    protected $message = 'success';
+    // protected $status = 'success';
+    // protected $message = 'success';
 
     /**
      * 架构函数 取得模板对象实例
@@ -31,8 +31,7 @@ class BaseController extends Controller {
     public function __construct() {
         parent::__construct();
         //实例化视图类
-        //
-        $this->message = L('success');
+        //$this->message = L('success');
 
         $this->viewi = new BaseView();
     }
@@ -50,16 +49,16 @@ class BaseController extends Controller {
      * @param string $prefix 模板缓存前缀
      * @return void
      */
-    protected function displayi($options = array(),$templateFile='',$charset='',$contentType='',$content='',$prefix=''){
+    protected function displayi($templateFile='',$charset='',$contentType='',$content='',$prefix=''){
 
         if(defined('TMPL_PATH')){
 
             $this->viewi = $this->status;
             $this->viewi = $this->message;
 
-            $this->viewi->displayi($options ,$templateFile,$charset,$contentType,$content,$prefix);
+            $this->viewi->displayi($templateFile,$charset,$contentType,$content,$prefix);
         }
-        
+
         $this->viewi->display($templateFile,$charset,$contentType,$content,$prefix);
 
      //    $themePath = TMPL_PATH.'config.php';
@@ -67,7 +66,7 @@ class BaseController extends Controller {
     	// if(Storage::has($themePath)){
      //        $themeConfig = include($themePath);
      //    }
-        
+
     	// //print_r($themeConfig);
 
     	// // $this->view->theme($theme)->display($templateFile,$charset,$contentType,$content,$prefix);
@@ -79,7 +78,7 @@ class BaseController extends Controller {
      //    // 输出模板内容
      //    //$this->render($content,$charset,$contentType);
      //    // 视图结束标签
-     //    //Hook::listen('view_end');// 
+     //    //Hook::listen('view_end');//
     }
 
     /**
@@ -92,7 +91,7 @@ class BaseController extends Controller {
         if(empty($theme) && empty($this->baseTheme())){
             $theme = 'default';
         }
-        
+
         $this->viewi->theme($theme);
         return $this;
     }
@@ -104,15 +103,28 @@ class BaseController extends Controller {
      * @param mixed $value 变量的值
      * @return Action
      */
-    protected function assigni($name,$value='') {
+    protected function assign($name,$value='') {
         $this->viewi->assign($name,$value);
         return $this;
     }
 
-    public function ajaxReturni($data,$type='',$json_option=0){
+    /**
+     * Ajax方式返回数据到客户端
+     * @access protected
+     * @param string $status 消息类型：info, warning, error, success
+     * @param string $message 消息内容
+     * @param mixed $data 要返回的数据
+     * @param String $type AJAX返回数据格式
+     * @param int $json_option 传递给json_encode的option参数
+     * @return void
+     */
+    public function ajaxReturni($status='success', $message='', $data='',$type='',$json_option=0){
+        $datai = array();
+        $datai['status'] = $status;
+        $datai['message'] = $message;
+        $data = $data?:'';
+        $datai['data'] = $data;
+
         $this->ajaxReturn($data,$type='',$json_option=0);
     }
-
-
-
 }

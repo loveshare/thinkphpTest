@@ -27,19 +27,9 @@ class InstallController extends BaseController{
         $this->$func();
     }
 
-    //安装第一步，检测运行所需的环境设置
     private function step1(){
-        session('error', false);
 
-        //目录文件读写检测
-        if(IS_WRITE){
-            $dirfile = check_dirfile();
-            $this->assign('dirfile', $dirfile);
-        }
-
-        session('step', 1);
-
-        $this->displayi(array(),__FUNCTION__);
+        $this->displayi(__FUNCTION__);
     }
 
     //安装第二步，创建数据库
@@ -105,7 +95,7 @@ class InstallController extends BaseController{
                 }
 
                 session('step', 2);
-                $this->displayi(array(),__FUNCTION__);
+                $this->displayi(__FUNCTION__);
 
         }
     }
@@ -116,7 +106,7 @@ class InstallController extends BaseController{
             $this->redirect('step2');
         }*/
 
-        $this->displayi(array(),__FUNCTION__);
+        $this->displayi(__FUNCTION__);
 
             //连接数据库
             $dbconfig = cookie('db_config');
@@ -148,6 +138,6 @@ class InstallController extends BaseController{
     public function error($info,$title='很遗憾，安装失败，失败原因'){
         $this->assign('info',$info);// 提示信息
         $this->assign('title',$title);
-        $this->displayi(array(),'error');exit;
+        $this->displayi(__FUNCTION__);exit;
     }
 }

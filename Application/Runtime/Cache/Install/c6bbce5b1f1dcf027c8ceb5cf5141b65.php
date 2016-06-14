@@ -58,20 +58,21 @@
 	</header>
 
             
-	<div class="container border-ltrb border-muted border-size-1">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="text-center"><?php echo (L("title")); ?></h1>
-				<block name="control">
-				<p><?php echo (L("welcome")); ?></p>
-				<?php echo (L("installNeed")); ?>
-				<?php echo (L("introduction")); ?>
-				<p>
-					<a type="button" class="btn btn-primary" href="<?php echo U('Install/Install/step',array('step'=>1));?>">
-						<?php echo (L("nowInstall")); ?>
-					</a>
-				</p>
-				
+				<div class="jumbotron">
+					<h1 class="text-center"><?php echo (L("title")); ?></h1>
+					<block name="control">
+					<p><?php echo (L("welcome")); ?></p>
+					<?php echo (L("installNeed")); ?>
+					<?php echo (L("introduction")); ?>
+					<p>
+						<a type="button" class="btn btn-primary" href="<?php echo U('Install/Install/step',array('step'=>1));?>">
+							<?php echo (L("nowInstall")); ?>
+						</a>
+					</p>
+					
             
 	<footer></footer>
 
