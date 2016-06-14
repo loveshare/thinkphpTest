@@ -58,7 +58,6 @@
             <block name="content"></block>
             <block name="foot"></block>
             
-            <div id="modal" class="modal" <notempty name="modalKeyBoard">data-keyboard="false"</notempty>></div>
             <block name="modal"></block>
             <block name="bottom"></block>
             <script src="{$Think.config.PUBLIC_PATH}/jquery/jquery.min.js"></script>
@@ -72,7 +71,7 @@
                     if(!empty($varScript)){
                         foreach($varScript as $k=>$v){
                             if($v)
-                                echo 'var ',$v,';';
+                                echo 'var ',$k,' = ',$v,';';
                         }
                     }
 
@@ -82,6 +81,7 @@
                     }
                 ?>
             </script>
+            <block name='footScripts'></block>
             <?php
                 //加载公共js
                 if(!empty($publicScript)){
@@ -105,6 +105,6 @@
                     }
                 }
             ?>
-            <block name='footScripts'></block>
+            
         </body>
     </html>

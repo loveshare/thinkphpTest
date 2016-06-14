@@ -36,9 +36,10 @@ if (!is_file( APP_PATH.'/Conf/user.php')) {
     exit;
 }
 
+define('_TMPL_PATH','./Template/');
 //设置模板目录
 if(!defined('CHANGE_ENTRY')){
-	define('TMPL_PATH','./Template/');
+	define('TMPL_PATH',_TMPL_PATH);
 }
 
 

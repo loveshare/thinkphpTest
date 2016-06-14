@@ -14,9 +14,7 @@
         <meta name="renderer" content="webkit">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>
-调整配置文件
-</title>
+        <title><?php echo (L("setConfig")); ?></title>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <!--[if lt IE 9]>
@@ -66,47 +64,47 @@
 			<div class="col-md-12">
 				<h1 class="text-center"><?php echo (L("title")); ?></h1>
 				
-	<h4 class="text-primary">设置您的数据库连接</h4>
+	<h4 class="text-primary"><?php echo (L("setData")); ?></h4>
 	<form method="post" id="dataForm" class="form-horizontal" action="<?php echo U('Install/Install/step',array('step'=>2));?>" novalidate="novalidate">
-		<p>请在下方填写您的数据库连接信息。如果您不确定，请联系您的服务提供商。</p>
+		<p><?php echo (L("setIntroduction")); ?></p>
 		<div class="form-group has-feedback">
-            <label class="col-lg-3 control-label">数据库名</label>
+            <label class="col-lg-3 control-label"><?php echo (L("dataName")); ?></label>
             <div class="col-lg-5">
-                <input type="text" class="form-control" name="dbname" data-bv-field="dbname" placeholder="将程序安装到哪个数据库？">
+                <input type="text" class="form-control" name="dbname" data-bv-field="dbname" placeholder="<?php echo (L("dataName")); ?>">
               </div>
         </div>
         <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label">用户名</label>
+            <label class="col-lg-3 control-label"><?php echo (L("userName")); ?></label>
             <div class="col-lg-5">
-                <input type="text" class="form-control" name="uname" data-bv-field="uname" placeholder="您的数据库用户名。">
+                <input type="text" class="form-control" name="uname" data-bv-field="uname" placeholder="<?php echo (L("userName")); ?>">
              </div>
         </div>
         <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label">密码</label>
+            <label class="col-lg-3 control-label"><?php echo (L("passWord")); ?></label>
             <div class="col-lg-5">
-                <input type="text" class="form-control" name="pwd" data-bv-field="pwd" placeholder="您的数据库密码。">
+                <input type="text" class="form-control" name="passWord" data-bv-field="passWord" placeholder="<?php echo (L("passWord")); ?>">
              </div>
         </div>
         <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label">数据库主机</label>
+            <label class="col-lg-3 control-label"><?php echo (L("host")); ?></label>
             <div class="col-lg-5">
-                <input type="text" class="form-control" name="dbhost" data-bv-field="dbhost" placeholder="一般使用localhost">
+                <input type="text" class="form-control" name="dbhost" data-bv-field="dbhost" placeholder="<?php echo (L("host")); ?>">
              </div>
         </div>
         <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label">域名</label>
+            <label class="col-lg-3 control-label"><?php echo (L("domain")); ?></label>
             <div class="col-lg-5">
-                <input type="text" class="form-control" name="domain" data-bv-field="domain" placeholder="网站使用的域名">
+                <input type="text" class="form-control" name="domain" data-bv-field="domain" placeholder="<?php echo (L("domain")); ?>">
              </div>
         </div>
         <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label">siteCode</label>
+            <label class="col-lg-3 control-label"><?php echo (L("siteCode")); ?></label>
             <div class="col-lg-5">
-                <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="网站的识别码">
+                <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="<?php echo (L("siteCode")); ?>">
              </div>
         </div>
 		<p class="step">
-		<button type="submit" class="btn btn-primary">提交</button></p>
+		<button type="submit" class="btn btn-primary"><?php echo (L("submit")); ?></button></p>
 	</form>
 
 			</div>
@@ -117,7 +115,6 @@
 	<footer></footer>
 
             
-            <div id="modal" class="modal" <?php if(!empty($modalKeyBoard)): ?>data-keyboard="false"<?php endif; ?>></div>
             
             
             <script src="<?php echo (C("PUBLIC_PATH")); ?>/jquery/jquery.min.js"></script>
@@ -127,82 +124,18 @@
                 var themePath = '<?php echo ($themePath); ?>';
                 var public = '<?php echo (C("PUBLIC_PATH")); ?>/';
                 <?php
- if(!empty($varScript)){ foreach($varScript as $k=>$v){ if($v) echo 'var ',$v,';'; } } if(!empty($codeScript)){ echo $codeScript; } ?>
+ if(!empty($varScript)){ foreach($varScript as $k=>$v){ if($v) echo 'var ',$k,' = ',$v,';'; } } if(!empty($codeScript)){ echo $codeScript; } ?>
             </script>
+            
+	<script>
+		var noempty = '<?php echo (L("noempty")); ?>';
+		var preg_w = '<?php echo (L("preg_w")); ?>';
+		var noValidate = '<?php echo (L("noValidate")); ?>';
+		<?php $publicScript[] = 'js/installStep1'; ?>
+	</script>
+
             <?php
  if(!empty($publicScript)){ foreach($publicScript as $k=>$v){ if($v) echo "<script src='",C('PUBLIC_PATH'),"/",$v,".js'></script>"; } } if(!empty($themeScript)){ foreach($themeScript as $k=>$v){ if($v) echo "<script src='",$themePath,"/",$v,".js'></script>"; } } if(!empty($loadScript)){ foreach($loadScript as $k=>$v){ if($v) echo "<script src='",$v,"'></script>"; } } ?>
             
-	<script>
-		(function($){
-		    $('#dataForm').bootstrapValidator({
-		        message: '这个选项未通过验证',
-		        feedbackIcons: {
-		            valid: 'glyphicon glyphicon-ok',
-		            invalid: 'glyphicon glyphicon-remove',
-		            validating: 'glyphicon glyphicon-refresh'
-		        },
-		        fields: {
-		            dbname: {
-		                message: '这个选项未通过验证',
-		                validators: {
-		                    notEmpty: {
-		                        message: '不能为空'
-		                    },
-		                    stringLength: {
-		                        min: 6,
-		                        max: 30,
-		                        message: '长度不小于6,不大于30'
-		                    },
-		                    regexp: {
-		                        regexp: /^[a-zA-Z0-9_]+$/,
-		                        message: '只能包含字母和数字'
-		                    }
-		                }
-		            },
-		            uname: {
-		                message: '这个选项未通过验证',
-		                validators: {
-		                    notEmpty: {
-		                        message: '不能为空'
-		                    },
-		                    regexp: {
-		                        regexp: /^[a-zA-Z0-9_]+$/,
-		                        message: '只能包含字母和数字'
-		                    }
-		                }
-		            },
-		            pwd: {
-		                validators: {
-		                    notEmpty: {
-		                        message: '不能为空'
-		                    }
-		                }
-		            },
-		            dbhost: {
-		                validators: {
-		                    notEmpty: {
-		                        message: '不能为空'
-		                    }
-		                }
-		            },
-		            domain: {
-		                validators: {
-		                    notEmpty: {
-		                        message: '不能为空'
-		                    }
-		                }
-		            },
-		            siteCode: {
-		                validators: {
-		                    notEmpty: {
-		                        message: '不能为空'
-		                    }
-		                }
-		            },
-		        }
-		    });
-		})(jQuery);
-	</script>
-
         </body>
     </html>
