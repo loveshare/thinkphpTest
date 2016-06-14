@@ -13,7 +13,7 @@ class BaseController extends Controller {
      * 视图实例对象
      * @var view
      * @access protected
-     */
+     */    
     protected $viewi     =  null;
 
     protected $themei = null;
@@ -21,8 +21,8 @@ class BaseController extends Controller {
     protected $classType = 'Controller';
 
     protected $error = '';
-    // protected $status = 'success';
-    // protected $message = 'success';
+    protected $status = 'success';
+    protected $message = 'success';
 
     /**
      * 架构函数 取得模板对象实例
@@ -31,7 +31,8 @@ class BaseController extends Controller {
     public function __construct() {
         parent::__construct();
         //实例化视图类
-        //$this->message = L('success');
+        //
+        $this->message = L('success');
 
         $this->viewi = new BaseView();
     }
@@ -49,16 +50,16 @@ class BaseController extends Controller {
      * @param string $prefix 模板缓存前缀
      * @return void
      */
-    protected function displayi($templateFile='',$charset='',$contentType='',$content='',$prefix=''){
+    protected function displayi($options = array(),$templateFile='',$charset='',$contentType='',$content='',$prefix=''){
 
         if(defined('TMPL_PATH')){
 
-            // $this->viewi = $this->status;
-            // $this->viewi = $this->message;
+            $this->viewi = $this->status;
+            $this->viewi = $this->message;
 
-            $this->viewi->displayi($templateFile,$charset,$contentType,$content,$prefix);
+            $this->viewi->displayi($options ,$templateFile,$charset,$contentType,$content,$prefix);
         }
-
+        
         $this->viewi->display($templateFile,$charset,$contentType,$content,$prefix);
 
      //    $themePath = TMPL_PATH.'config.php';
@@ -66,7 +67,7 @@ class BaseController extends Controller {
     	// if(Storage::has($themePath)){
      //        $themeConfig = include($themePath);
      //    }
-
+        
     	// //print_r($themeConfig);
 
     	// // $this->view->theme($theme)->display($templateFile,$charset,$contentType,$content,$prefix);
@@ -78,7 +79,7 @@ class BaseController extends Controller {
      //    // 输出模板内容
      //    //$this->render($content,$charset,$contentType);
      //    // 视图结束标签
-     //    //Hook::listen('view_end');//
+     //    //Hook::listen('view_end');// 
     }
 
     /**
@@ -91,7 +92,7 @@ class BaseController extends Controller {
         if(empty($theme) && empty($this->baseTheme())){
             $theme = 'default';
         }
-
+        
         $this->viewi->theme($theme);
         return $this;
     }

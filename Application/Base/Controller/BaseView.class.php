@@ -21,25 +21,25 @@ class BaseView extends View {
      * @param string $prefix 模板缓存前缀
      * @return mixed
      */
-    public function displayi($templateFile='',$charset='',$contentType='',$content='',$prefix='') {
+    public function displayi($options=array(),$templateFile='',$charset='',$contentType='',$content='',$prefix='') {
 
-        // $default = array('customType'=>false,'dataType'=>'json');
-        // $options = array_merge($default,$options);
+        $default = array('customType'=>false,'dataType'=>'json');
+        $options = array_merge($default,$options);
         /**
          * JSON、JSONP、XML和EVAL
          */
-        // $dataType = I('param.returnType')?:$options['dataType'];
-        // if($options['customType'] && $dataType){
-        //     $data = array(
-        //         'status'=> $this->status,
-        //         'message' => $this->message,
-        //         'data' => $this->tVar
-        //         );
-        //     $this->baseControlle()->ajaxReturni($data,$dataType);
-        // }
-        //
-        // $this->tVar['status'] = $this->status;
-        // $this->tVar['message'] = $this->message;
+        $dataType = I('param.returnType')?:$options['dataType'];
+        if($options['customType'] && $dataType){
+            $data = array(
+                'status'=> $this->status,
+                'message' => $this->message,
+                'data' => $this->tVar
+                );
+            $this->baseControlle()->ajaxReturni($data,$dataType);
+        }
+
+        $this->tVar['status'] = $this->status;
+        $this->tVar['message'] = $this->message;
 
 
         G('viewStartTime');
@@ -61,7 +61,7 @@ class BaseView extends View {
      * @param string $contentType 输出类型
      * @return mixed
      */
-
+    
     private function baseRender($content,$charset='',$contentType=''){
         if(empty($charset))  $charset = C('DEFAULT_CHARSET');
         if(empty($contentType)) $contentType = C('TMPL_CONTENT_TYPE');
@@ -159,12 +159,12 @@ class BaseView extends View {
         $theme = $this->getTemplateThemei();
         // 获取当前主题的模版路径
         $tmplPath   =   C('VIEW_PATH'); // 模块设置独立的视图目录
-        if(!$tmplPath){
+        if(!$tmplPath){ 
             // 定义TMPL_PATH 则改变全局的视图目录到模块之外
             $tmplPath   =   defined('TMPL_PATH')? TMPL_PATH.$theme.$module.'/' : APP_PATH.$module.'/'.C('DEFAULT_V_LAYER').'/';
         }
         $tmplPath = 1;
-
+        
         $this->setVarThemePath($tmplPath);
         return $tmplPath;
     }
@@ -181,11 +181,11 @@ class BaseView extends View {
         $theme = $this->getTemplateTheme();
         // 获取当前主题的模版路径
         $tmplPath   =   C('VIEW_PATH'); // 模块设置独立的视图目录
-        if(!$tmplPath){
+        if(!$tmplPath){ 
             // 定义TMPL_PATH 则改变全局的视图目录到模块之外
             $tmplPath   =   defined('TMPL_PATH')? TMPL_PATH.$module.'/' : APP_PATH.$module.'/'.C('DEFAULT_V_LAYER').'/';
         }
-
+        
         $this->setVarThemePath($tmplPath);
         return $tmplPath.$theme;
     }
@@ -227,7 +227,7 @@ class BaseView extends View {
         return $theme?$theme . '/':'';
     }
 
-    // private function baseControlle(){
-    //     return (new BaseController);
-    // }
+    private function baseControlle(){
+        return (new BaseController);
+    }
 }
