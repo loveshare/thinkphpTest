@@ -1,0 +1,567 @@
+[ 2016-05-31T20:02:50+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016249s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2016-05-31T20:03:07+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
+[ 2016-05-31T20:03:36+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
+[ 2016-05-31T20:17:15+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
+[ 2016-05-31T20:23:52+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000277s ]
+
+[ 2016-05-31T20:26:17+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000216s ]
+
+[ 2016-05-31T20:27:51+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2016-05-31T20:28:14+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-05-31T20:31:14+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000237s ]
+
+[ 2016-05-31T20:31:15+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2016-05-31T20:31:37+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-05-31T20:31:38+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-05-31T20:32:30+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2016-05-31T20:33:39+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000278s ]
+
+[ 2016-05-31T20:35:37+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2016-05-31T20:35:38+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2016-05-31T20:35:59+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000229s ]
+
+[ 2016-05-31T20:36:00+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2016-05-31T20:36:06+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000013s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000027s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000280s ]
+
+[ 2016-05-31T20:36:11+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000202s ]
+
+[ 2016-05-31T20:36:37+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000244s ]
+
+[ 2016-05-31T20:36:51+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000204s ]
+
+[ 2016-05-31T20:37:17+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000210s ]
+
+[ 2016-05-31T20:37:19+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2016-05-31T20:37:37+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+

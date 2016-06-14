@@ -1,0 +1,63 @@
+<extend name="Base@Base/base" />
+<block name='baseVar'>
+<assign name="bodyClss" value="body" />
+<assign name="htmlClss" value="html" />
+</block>
+<block name='title'>
+{$Think.lang.title}
+</block>
+<block name='keywords'></block>
+<block name='description'></block>
+<block name='stylesheets'></block>
+
+<block name="header">
+	<header>
+		<div class="navbar navbar-inverse noRadius">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand hidden-sm active">{$Think.lang.title}</a>
+	        </div>
+	        <div class="navbar-collapse collapse" role="navigation">
+	          <ul class="nav navbar-nav">
+	            <li class="hidden-sm hidden-md"><a href="#">介绍</a></li>
+	            <li class="hidden-sm hidden-md"><a href="#">配置文件</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	</header>
+</block>
+<block name="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron">
+				<h1 class="text-center">{$Think.lang.title}</h1>
+				<block name="control">
+				<p>{$Think.lang.welcome}</p>
+				{$Think.lang.installNeed}
+				{$Think.lang.introduction}
+				<p>
+					<a type="button" class="btn btn-primary" href="{:U('Install/Install/step',array('step'=>1))}">
+						{$Think.lang.nowInstall}
+					</a>
+				</p>
+				</block>
+				<div>
+			</div>
+		</div>
+	</div>
+</block>
+<block name="foot">
+	<footer></footer>
+</block>
+
+<block name="modal"></block>
+<block name="bottom"></block>
+<block name="footScripts"></block>

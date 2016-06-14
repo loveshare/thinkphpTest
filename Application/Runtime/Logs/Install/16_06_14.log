@@ -1,0 +1,98 @@
+[ 2016-06-14T09:00:09+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000218s ]
+
+[ 2016-06-14T09:00:12+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [2] is_file() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/ThinkPHP/Library/Think/View.class.php 第 143 行.
+NOTIC: [2] strpos() expects parameter 1 to be string, array given /home/wwwroot/thinkphp/ThinkPHP/Library/Think/View.class.php 第 151 行.
+NOTIC: [2] strpos() expects parameter 1 to be string, array given /home/wwwroot/thinkphp/ThinkPHP/Library/Think/View.class.php 第 161 行.
+NOTIC: [8] Array to string conversion /home/wwwroot/thinkphp/ThinkPHP/Library/Think/View.class.php 第 164 行.
+ERR: 模板不存在:./Application/Install/View/Array.html
+
+[ 2016-06-14T09:01:38+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000217s ]
+

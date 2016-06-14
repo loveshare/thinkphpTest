@@ -1,0 +1,664 @@
+[ 2016-05-26T14:52:39+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.015732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2016-05-26T14:52:40+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000244s ]
+
+[ 2016-05-26T14:52:42+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:14+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:14+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:15+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:15+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:15+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:15+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:15+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:16+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:16+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:16+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:16+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:16+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:17+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:17+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:53:54+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: useMysqli /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 9 行.
+ERR: Cannot access empty property
+
+[ 2016-05-26T14:55:58+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 60 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 60 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
+[ 2016-05-26T14:56:14+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 60 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 60 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
+[ 2016-05-26T14:56:14+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 60 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 60 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
+[ 2016-05-26T14:59:44+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: syntax error, unexpected '{'
+
+[ 2016-05-26T14:59:57+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:00:35+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:00:47+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:00:48+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:00:48+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:00:48+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:00:48+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:00:49+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:01:07+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:01:46+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:02:11+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:02:11+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:02:29+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:22+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:23+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:23+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:23+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:23+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:31+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:32+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:32+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:03:32+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+ERR: Call to undefined function Common\Check\mysql_get_server_info()
+
+[ 2016-05-26T15:04:52+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [2] mysqli_get_server_info() expects exactly 1 parameter, 0 given /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
+[ 2016-05-26T15:04:56+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+NOTIC: [2] mysqli_get_server_info() expects exactly 1 parameter, 0 given /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 136 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Common/Check/Check.class.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [2] disk_free_space(): No such file or directory /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 70 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 98 行.
+NOTIC: [2] is_dir() expects parameter 1 to be a valid path, array given /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 99 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 110 行.
+NOTIC: [8] Use of undefined constant INSTALL_APP_PATH - assumed 'INSTALL_APP_PATH' /home/wwwroot/thinkphp/Application/Install/Common/function.php 第 117 行.
+ERR: 模板不存在:./Application/Install/View/Install/step1.html
+
