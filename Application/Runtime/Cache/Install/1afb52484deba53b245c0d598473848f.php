@@ -59,11 +59,12 @@
 	</header>
 
             
-	<div class="container border-ltrb border-muted border-size-1">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="text-center"><?php echo (L("title")); ?></h1>
-				
+				<div class="jumbotron">
+					<h1 class="text-center"><?php echo (L("title")); ?></h1>
+					
 	<h4 class="text-primary"><?php echo (L("setData")); ?></h4>
 	<form method="post" id="dataForm" class="form-horizontal" action="<?php echo U('Install/Install/step',array('step'=>2));?>" novalidate="novalidate">
 		<p><?php echo (L("setIntroduction")); ?></p>
@@ -107,9 +108,10 @@
 		<button type="submit" class="btn btn-primary"><?php echo (L("submit")); ?></button></p>
 	</form>
 
+				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 
             
 	<footer></footer>
