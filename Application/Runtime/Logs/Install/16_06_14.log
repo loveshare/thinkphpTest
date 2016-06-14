@@ -284,3 +284,25 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
 NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
 ERR: 模板不存在:./Application/Install/View/Install/error.html
 
+[ 2016-06-14T14:41:32+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2] Declaration of Install\Controller\InstallController::error($info, $title = '很遗憾�...') should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000211s ]
+
