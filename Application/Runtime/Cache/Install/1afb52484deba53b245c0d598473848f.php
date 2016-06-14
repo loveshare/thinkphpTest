@@ -61,10 +61,16 @@
 	</header>
 
             
+<<<<<<< HEAD
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="jumbotron">
+=======
+	<div class="container border-ltrb border-muted border-size-1">
+		<div class="row">
+			<div class="col-md-12">
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 				<h1 class="text-center"><?php echo (L("title")); ?></h1>
 				
 	<h4 class="text-primary">设置您的数据库连接</h4>
@@ -110,10 +116,16 @@
 		<button type="submit" class="btn btn-primary">提交</button></p>
 	</form>
 
+<<<<<<< HEAD
 				<div>
 			</div>
 		</div>
 	</div>
+=======
+			</div>
+		</div>
+	</div>	
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 
             
 	<footer></footer>

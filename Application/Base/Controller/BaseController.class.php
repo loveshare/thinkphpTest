@@ -13,7 +13,11 @@ class BaseController extends Controller {
      * 视图实例对象
      * @var view
      * @access protected
+<<<<<<< HEAD
      */
+=======
+     */    
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
     protected $viewi     =  null;
 
     protected $themei = null;
@@ -31,6 +35,11 @@ class BaseController extends Controller {
     public function __construct() {
         parent::__construct();
         //实例化视图类
+<<<<<<< HEAD
+=======
+        //
+        $this->message = L('success');
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 
         $this->viewi = new BaseView();
     }
@@ -48,6 +57,7 @@ class BaseController extends Controller {
      * @param string $prefix 模板缓存前缀
      * @return void
      */
+<<<<<<< HEAD
     protected function displayi($templateFile='',$charset='',$contentType='',$content='',$prefix=''){
 
         if(defined('TMPL_PATH')){
@@ -59,6 +69,18 @@ class BaseController extends Controller {
             $this->viewi->displayi($templateFile,$charset,$contentType,$content,$prefix);
         }
 
+=======
+    protected function displayi($options = array(),$templateFile='',$charset='',$contentType='',$content='',$prefix=''){
+
+        if(defined('TMPL_PATH')){
+
+            $this->viewi = $this->status;
+            $this->viewi = $this->message;
+
+            $this->viewi->displayi($options ,$templateFile,$charset,$contentType,$content,$prefix);
+        }
+        
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
         $this->viewi->display($templateFile,$charset,$contentType,$content,$prefix);
 
      //    $themePath = TMPL_PATH.'config.php';
@@ -66,7 +88,11 @@ class BaseController extends Controller {
     	// if(Storage::has($themePath)){
      //        $themeConfig = include($themePath);
      //    }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
     	// //print_r($themeConfig);
 
     	// // $this->view->theme($theme)->display($templateFile,$charset,$contentType,$content,$prefix);
@@ -78,7 +104,11 @@ class BaseController extends Controller {
      //    // 输出模板内容
      //    //$this->render($content,$charset,$contentType);
      //    // 视图结束标签
+<<<<<<< HEAD
      //    //Hook::listen('view_end');//
+=======
+     //    //Hook::listen('view_end');// 
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
     }
 
     /**
@@ -91,7 +121,11 @@ class BaseController extends Controller {
         if(empty($theme) && empty($this->baseTheme())){
             $theme = 'default';
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
         $this->viewi->theme($theme);
         return $this;
     }
@@ -114,4 +148,8 @@ class BaseController extends Controller {
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031

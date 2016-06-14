@@ -2,7 +2,11 @@
 namespace Common\Traits;
 
 Trait ClassTrait {
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 	/**
 	 * [实例化 common 下的模]
 	 * @param  [string] $name [模块目录.模块]
@@ -30,6 +34,7 @@ Trait ClassTrait {
 	 * @param  string  $goto     消息跳转的页面
 	 * @return Response
 	 */
+<<<<<<< HEAD
 	public function createMeseage($status='success', $message, $title = '',$goto = null) {
 
 		$mold = array('info', 'warning', 'error', 'success');
@@ -37,21 +42,40 @@ Trait ClassTrait {
 
 		$data = array(
 			'title'    => $title,
+=======
+	public function createMeseage($status='success', $message, $title = '', $duration = 0, $goto = null) {
+
+		$mold = array('info', 'warning', 'error', 'success');
+		$type = in_array($type, $mold) ? $type : 'success';
+
+		$data = array(
+			'title'    => $title,
+			'duration' => $duration,
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 			'goto'     => $goto,
 		);
 
 		$this->assign($data);
+<<<<<<< HEAD
 		$this->assign($status);
 		$this->assign($message);
 
 		//$this->display('./Template/Public/menu.html');
 		if($this->classType == 'Controller'){
 			return $this->displayi('Home@Default:message');
+=======
+		$this->status = $status;
+        $this->message = $message;
+		//$this->display('./Template/Public/menu.html');
+		if($this->classType == 'Controller'){
+			return $this->displayi(array('customType'=>true,'dataType'=>'json'),'Home@Default:message');
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 		}else{
 			return E($message);
 		}
 	}
 
+<<<<<<< HEAD
 	/**
      * Ajax方式返回数据到客户端
      * @access protected
@@ -74,3 +98,6 @@ Trait ClassTrait {
 	}
 
 }
+=======
+}
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031

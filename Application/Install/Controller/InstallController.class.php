@@ -39,7 +39,11 @@ class InstallController extends BaseController{
 
         session('step', 1);
 
+<<<<<<< HEAD
         $this->displayi(__FUNCTION__);
+=======
+        $this->displayi(array(),__FUNCTION__);
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
     }
 
     //安装第二步，创建数据库
@@ -105,7 +109,11 @@ class InstallController extends BaseController{
                 }
 
                 session('step', 2);
+<<<<<<< HEAD
                 $this->displayi(__FUNCTION__);
+=======
+                $this->displayi(array(),__FUNCTION__);
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 
         }
     }
@@ -116,7 +124,11 @@ class InstallController extends BaseController{
             $this->redirect('step2');
         }*/
 
+<<<<<<< HEAD
         $this->displayi(__FUNCTION__);
+=======
+        $this->displayi(array(),__FUNCTION__);
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
 
             //连接数据库
             $dbconfig = cookie('db_config');
@@ -148,6 +160,12 @@ class InstallController extends BaseController{
     public function error($info,$title='很遗憾，安装失败，失败原因'){
         $this->assign('info',$info);// 提示信息
         $this->assign('title',$title);
+<<<<<<< HEAD
         $this->displayi(__FUNCTION__);exit;
     }
 }
+=======
+        $this->displayi(array(),'error');exit;
+    }
+}
+>>>>>>> e260851edb7f12f970f9f452ac22fc21a3162031
