@@ -120,6 +120,8 @@ class BaseController extends Controller {
      */
     public function ajaxReturni($status='success', $message='', $data='',$type='',$json_option=0){
         $datai = array();
+        $mold = array('info', 'warning', 'error', 'success');
+		$status = in_array($status, $mold) ? $status : 'success';
         $datai['status'] = $status;
         $datai['message'] = $message;
         $data = $data?:'';

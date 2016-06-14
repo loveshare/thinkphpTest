@@ -4,7 +4,7 @@
  * @link http://blog.csdn.net/luochuan/article/details/7601376
  */
 
-namespace Common\Model
+namespace Common\Model\Memory;
 class RedisModel
 {
 	//REDIS服务主机IP
@@ -24,14 +24,14 @@ class RedisModel
 
 	//实例名
 	public $_REDIS = null;
-        
+
         private static $_instance=array();
 
 	//事物对象
 	private $_TRANSCATION = null;
 
     private $_AUTH = '';
-        
+
 	//初始化
 	public function __construct($host, $port, $timeout, $auth, $dbName='', $ctype=1)
 	{
@@ -45,11 +45,11 @@ class RedisModel
 		if (!isset($this->_REDIS)) {
 			$this->_REDIS = new \Redis();
 			$this->connect($this->_HOST, $this->_PORT, $this->_TIMEOUT, $this->_DBNAME, $this->_CTYPE);
-                        
+
 		}
 	}
-        
-    public static function getInstance($dbIdx=0)    
+
+    public static function getInstance($dbIdx=0)
     {
 
         if(!isset(self::$_instance[$dbIdx]) || ! (self::$_instance[$dbIdx] instanceof self) ) {
@@ -57,14 +57,14 @@ class RedisModel
             self::$_instance[$dbIdx]->select($dbIdx);
         }
         return self::$_instance[$dbIdx];
-    } 
-    
+    }
+
     /*
      * 选择数据库
      */
     public function select($db){
         return  $this->_REDIS->select($db);
-    }             
+    }
 
 	/**
 	 * 连接redis服务器
@@ -94,7 +94,7 @@ class RedisModel
     public function close(){
         $this->_REDIS->close();
     }
-        
+
 	/**
 	 * 查看redis连接是否断开
 	 * @return $return bool true:连接未断开 false:连接已断开
@@ -111,7 +111,7 @@ class RedisModel
 	/**
 	 * 设置redis模式参数
 	 * @param $option array 参数数组键值对
-	 * @return $return true/false 
+	 * @return $return true/false
 	 */
 	public function setOption($option=array())
 	{
@@ -131,7 +131,7 @@ class RedisModel
 	 * 写入key-value
 	 * @param $key string 要存储的key名
 	 * @param $value mixed 要存储的值
-	 * @param $type int 写入方式 0:不添加到现有值后面 1:添加到现有值的后面 默认0 
+	 * @param $type int 写入方式 0:不添加到现有值后面 1:添加到现有值的后面 默认0
 	 * @param $repeat int 0:不判断重复 1:判断重复
 	 * @param $time float 过期时间(S)
 	 * @param $old int 1:返回旧的value 默认0
@@ -186,7 +186,7 @@ class RedisModel
                 return 'none';
         }
     }
-        
+
 	/**
 	 * 获取某个key值 如果指定了start end 则返回key值的start跟end之间的字符
 	 * @param $key string/array 要获取的key或者key数组
@@ -354,7 +354,7 @@ class RedisModel
 	 * @param $list1 string 队列名
 	 * @param $deriction int 0:数据入队列头(左) 1:数据入队列尾(右) 默认为0
 	 * @param $list2 string 第二个队列名 默认null
-	 * @param $timeout int timeout为0:只获取list1队列的数据 
+	 * @param $timeout int timeout为0:只获取list1队列的数据
 	 *        timeout>0:如果队列list1为空 则等待timeout秒 如果还是未获取到数据 则对list2队列执行pop操作
 	 */
 	public function listPop($list1,$deriction=0,$list2=null,$timeout=0)
@@ -533,7 +533,7 @@ class RedisModel
 			if ($stype) $return = $this->_REDIS->zRem($set1, $value);
 			else $return = $this->_REDIS->sRem($set1, $value);
 		}
-		
+
 		return $return;
 	}
         /**
@@ -744,7 +744,7 @@ class RedisModel
 
 	/**
 	 * ***只针对有序集合操作
-	 * 获取set中某个元素的score 
+	 * 获取set中某个元素的score
 	 * 如果指定了inc参数 则给该元素的score增加inc值
 	 * 如果没有该元素 则将该元素写入集合
 	 * @param $set string 集合名
@@ -760,7 +760,7 @@ class RedisModel
 		} else {
 			$return = $this->_REDIS->zScore($set, $value);
 		}
-		
+
 		return $return;
 	}
 
@@ -769,7 +769,7 @@ class RedisModel
      * @example zRangeByScore('zset', '(1', 2, array('withscores' => TRUE)))
      * @example zRangeByScore('zset', '-inf', '+inf', array('withscores' => TRUE)));
      * @example zRevRangeByScore('key', 1, 0, array('limit' => array(0, 100))));
-     * 
+     *
      * @param type $param
      */
     public function zRangeByScore($key, $min, $max, $param=array()){
@@ -781,7 +781,7 @@ class RedisModel
      * @example zRangeByScore('zset', '(1', 2, array('withscores' => TRUE)))
      * @example zRangeByScore('zset', '-inf', '+inf', array('withscores' => TRUE)));
      * @example zRevRangeByScore('key', 1, 0, array('limit' => array(0, 100))));
-     * 
+     *
      * @param type $param
      */
     public function zRevRangeByScore($key, $min, $max, $param=array()){
@@ -885,7 +885,7 @@ class RedisModel
 
 		return $return;
 	}
-        
+
     public function hashGetAll($key, $fields=array()){
         if($fields){
             return $this->_REDIS->hMGet($key, $fields);
@@ -970,7 +970,7 @@ class RedisModel
         public function expire($key, $expire=0){
                 return $this->_REDIS->expire($key, $expire);
         }
-        
+
 	/**
 	 * 获取满足给定pattern的所有key
 	 * @param $key regexp key匹配表达式 模式:user* 匹配以user开始的key
@@ -1023,9 +1023,9 @@ class RedisModel
 	public function info($firend = 0)
 	{
 		$return = null;
-                
-        $return = $this->_REDIS->info(); 
-  
+
+        $return = $this->_REDIS->info();
+
         if($firend == 1 && $return){
             $infoArr = array();
             $type = '';
@@ -1041,7 +1041,7 @@ class RedisModel
                 $infoArr[$type][$key] = $val;
             }
             return $infoArr;
-        }else{               
+        }else{
             return $return;
         }
 	}
