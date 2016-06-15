@@ -4413,3 +4413,99 @@ INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000274s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
 ERR: 模板不存在:./Application/Install/View/Install/step3.html
 
+[ 2016-06-15T17:53:39+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009576s ]
+ERR: 模板不存在:./Application/Install/View/Install/step3.html
+
+[ 2016-06-15T18:04:23+08:00 ] 127.0.0.1 /install.php/Install/step/step/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: CREATE DATABASE IF NOT EXISTS `thinkphp` DEFAULT CHARACTER SET utf8 [ RunTime:0.1186s ]
+NOTIC: [2] Missing argument 1 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 3 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 4 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [8] Undefined variable: host /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 38 行.
+NOTIC: [8] Undefined variable: port /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: timeout /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 40 行.
+NOTIC: [8] Undefined variable: auth /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 43 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 3 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 4 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [8] Undefined variable: host /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 38 行.
+NOTIC: [8] Undefined variable: port /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: timeout /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 40 行.
+NOTIC: [8] Undefined variable: auth /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.010902s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010966s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001253s ]
+
+[ 2016-06-15T18:05:04+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+ERR: 模板不存在:./Application/Install/View/Install/step3.html
+
+[ 2016-06-15T18:05:15+08:00 ] 127.0.0.1 /install.php/Install/step/step/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: CREATE DATABASE IF NOT EXISTS `thinkphp` DEFAULT CHARACTER SET utf8 [ RunTime:0.0344s ]
+NOTIC: [2] Missing argument 1 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 3 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 4 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 75 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [8] Undefined variable: host /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 38 行.
+NOTIC: [8] Undefined variable: port /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: timeout /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 40 行.
+NOTIC: [8] Undefined variable: auth /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 43 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 3 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 4 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [8] Undefined variable: host /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 38 行.
+NOTIC: [8] Undefined variable: port /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: timeout /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 40 行.
+NOTIC: [8] Undefined variable: auth /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000220s ]
+

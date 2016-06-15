@@ -4,11 +4,11 @@
     global $ezsql_mysqli_str;
 	$ezsql_mysqli_str = array
 	(
-		1 => 'Require $dbuser and $dbpassword to connect to a database server',
-		2 => 'Error establishing mySQLi database connection. Correct user/password? Correct hostname? Database server running?',
-		3 => 'Require $dbname to select a database',
-		4 => 'mySQLi database connection is not active',
-		5 => 'Unexpected error while trying to select database'
+		1 => 'needUserPassDb', //需要用户名和密码连接到数据库服务器
+		2 => 'needrealUserPassDb',  //建立mysqli数据库连接错误。正确的用户/密码？正确的主机？数据库服务器运行？
+		3 => 'needNameDb',  //需要选择一个数据库
+		4 => 'mysqliNotActive',  //未激活mySQLi链接
+		5 => 'selectDbError'   //尝试选择数据库时意外错误
 	);
 	/**********************************************************************
 	*  ezSQL Database specific class - mySQLi
@@ -40,7 +40,7 @@
 			$this->dbpassword = $dbpassword?:C('DB_PWD');
 			$this->dbname = $dbname?:C('DB_NAME');
             $dbhost = $dbhost?:C('DB_HOST');
-            $dbport = C('DB_PORT');
+            $dbport = C('DB_PORT')?:3306;
 			list( $this->dbhost, $this->dbport ) = $this->get_host_port( $dbhost, $dbport );
 			$this->encoding = $encoding?:C('DB_CHARSET');
 		}
