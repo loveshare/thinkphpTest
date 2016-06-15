@@ -71,9 +71,6 @@ class RedisModel
 	 */
 	private function connect($host,$port,$timeout,$dbname,$type)
 	{
-//            static $cnt = 1;
-//            $log = sprintf("pid=%d, idx=%d".PHP_EOL, posix_getpid(), $cnt++);
-//            file_put_contents('/tmp/debug_redis.log', $log, FILE_APPEND);
 		switch ($type) {
 			case 1:
 				$this->_REDIS->connect($host, $port, $timeout);

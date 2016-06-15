@@ -6,15 +6,16 @@
 // +----------------------------------------------------------------------
 // | Author: 褚兆前 <1028290810@qq.com>
 // +----------------------------------------------------------------------
-// 
+//
 /**
  * @modify
  * @author chuzhaoqian
- * 
+ *
  * view.class.php #@modify# private function getTemplateTheme() -> protected function getTemplateTheme()
- * 
- * Model.class.php select find union where save add addAll count 
+ *
+ * Model.class.php select find union where save add addAll count
  * 	# public function __construct 设置默认siteCode 管理中心忽略siteCode 和 model忽略siteCode设置
+ * 	#protected $error   #@modify#   public $error
  *
  * Template.class.php 多次继承问题
  *  # protected function parseExtend #@add# $content = $this->parseExtend($content);
@@ -29,19 +30,27 @@ require './headerFunction.php';
 define('APP_DEBUG',True);
 
 // 定义应用目录
-define('APP_PATH','./Application/');
+$app = 'Application';
+define('APP_PATH','./'.$app.'/');
 
-if (!is_file( APP_PATH.'/Conf/user.php')) {
+define('_TMPL_PATH','./Template/');
+
+if (!isset($install) && !is_file( APP_PATH.'/Conf/user.php')) {
     header('Location: /install.php');
     exit;
 }
-
-define('_TMPL_PATH','./Template/');
 //设置模板目录
 if(!defined('CHANGE_ENTRY')){
 	define('TMPL_PATH',_TMPL_PATH);
 }
+$entry = $entry?:basename(__FILE__);
+define('ENTRY',$entry);
 
+//$GLOBALS['rootPath'] = dirname(__FILE__);
+define('ROOT_PATH',dirname(__FILE__));
+
+//$GLOBALS['rootApp'] = dirname(__FILE__).'/'.$app;
+define('ROOT_APP',ROOT_PATH.'/'.$app);
 
 /**
  * 引入核心入口

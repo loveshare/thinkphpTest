@@ -65,48 +65,32 @@
 				<div class="jumbotron">
 					<h1 class="text-center"><?php echo (L("title")); ?></h1>
 					
-	<h4 class="text-primary"><?php echo (L("setData")); ?></h4>
-	<form method="post" id="dataForm" class="form-horizontal" action="<?php echo U('Install/Install/step',array('step'=>2));?>" novalidate="novalidate">
-		<div class="alert alert-info" role="alert"><?php echo (L("setIntroduction")); ?></div>
-		<div class="form-group has-feedback">
-            <label class="col-lg-3 control-label"><?php echo (L("dataName")); ?></label>
-            <div class="col-lg-5">
-                <input type="text" class="form-control" name="dbname" data-bv-field="dbname" placeholder="<?php echo (L("dataName")); ?>">
-              </div>
-        </div>
-        <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label"><?php echo (L("userName")); ?></label>
-            <div class="col-lg-5">
-                <input type="text" class="form-control" name="uname" data-bv-field="uname" placeholder="<?php echo (L("userName")); ?>">
-             </div>
-        </div>
-        <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label"><?php echo (L("passWord")); ?></label>
-            <div class="col-lg-5">
-                <input type="text" class="form-control" name="passWord" data-bv-field="passWord" placeholder="<?php echo (L("passWord")); ?>">
-             </div>
-        </div>
-        <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label"><?php echo (L("host")); ?></label>
-            <div class="col-lg-5">
-                <input type="text" class="form-control" name="dbhost" data-bv-field="dbhost" placeholder="<?php echo (L("host")); ?>">
-             </div>
-        </div>
-        <!-- <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label"><?php echo (L("domain")); ?></label>
-            <div class="col-lg-5">
-                <input type="text" class="form-control" name="domain" data-bv-field="domain" placeholder="<?php echo (L("domain")); ?>">
-             </div>
-        </div>
-        <div class="form-group has-feedback">
-            <label class="col-lg-3 control-label"><?php echo (L("siteCode")); ?></label>
-            <div class="col-lg-5">
-                <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="<?php echo (L("siteCode")); ?>">
-             </div>
-        </div> -->
-		<p class="step">
-		<button type="submit" class="btn btn-primary"><?php echo (L("submit")); ?></button></p>
-	</form>
+		<p>
+            <?php if(empty($error)): ?><h4 class="text-primary"><?php echo (L("setData")); ?></h4>
+            	<form method="post" id="dataForm" class="form-horizontal" action="<?php echo U('Install/Install/step',array('step'=>3));?>" novalidate="novalidate">
+                    <div class="alert alert-success" role="alert"><?php echo (L("setIntroduction")); ?></div>
+                    <div class="form-group has-feedback">
+                        <label class="col-lg-3 control-label"><?php echo (L("domain")); ?></label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="domain" data-bv-field="domain" placeholder="<?php echo (L("domain")); ?>">
+                         </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="col-lg-3 control-label"><?php echo (L("siteCode")); ?></label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="<?php echo (L("siteCode")); ?>">
+                         </div>
+                    </div>
+                    <p class="step">
+                    <button type="submit" class="btn btn-primary"><?php echo (L("submit")); ?></button></p>
+                    </p>
+                </form>
+            <?php else: ?>
+                <?php if(is_array($error)): foreach($error as $key=>$vo): ?><div class="alert alert-danger" role="alert">
+                        <span class="label label-danger"><?php echo ($key); ?></span>
+                        <?php echo ($vo); ?>
+                    </div><?php endforeach; endif; endif; ?>
+
 
 				</div>
 			</div>

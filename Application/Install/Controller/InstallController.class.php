@@ -9,9 +9,10 @@
 
 namespace Install\Controller;
 use Base\Controller\BaseController;
-use Think\Db;
 use Think\Storage;
 use Common\Check\Check;
+use Common\Model\File\BuildConfig;
+use Common\Model\Memory\RedisModel;
 
 class InstallController extends BaseController{
 
@@ -32,72 +33,64 @@ class InstallController extends BaseController{
         $this->displayi(__FUNCTION__);
     }
 
-    //安装第二步，创建数据库
+    //生成配置文件
     private function step2($db = null, $admin = null){
-        if(IS_POST){
+        $error = array();
 
+         C('DB_TYPE','mysqli');
+         $dbhost = I('post.dbhost');
+         $dbname = I('post.dbname');
+         $uname = I('post.uname');
+         $passWord = I('post.passWord');
 
-            //检测管理员信息
-            if(!is_array($admin) || empty($admin[0]) || empty($admin[1]) || empty($admin[3])){
-                $this->error('请填写完整管理员信息');
-            } else if($admin[1] != $admin[2]){
-                $this->error('确认密码和密码不一致');
-            } else {
-                $info = array();
-                list($info['username'], $info['password'], $info['repassword'], $info['email'])
-                    = $admin;
-                //缓存管理员信息
-                session('admin_info', $info);
+         C('DB_HOST',$dbhost);
+         C('DB_NAME',$dbname);
+         C('DB_USER',$uname);
+         C('DB_PWD',$passWord);
+
+        try{
+            $sql = "CREATE DATABASE IF NOT EXISTS `{$dbname}` DEFAULT CHARACTER SET utf8";
+            $db  = M(); //直接实例化是不会报出错的
+            $db->execute($sql); //需要执行一个Sql语句才能调用错误
+        }catch(\Exception $e){
+            if(strpos($e->getMessage(),'getaddrinfo failed')!==false){
+                $error['db'] = '数据库服务器（数据库服务器IP） 填写错误。 很遗憾，创建数据库失败，失败原因';// 提示信息
             }
-
-            //检测数据库配置
-            if(!is_array($db) || empty($db[0]) ||  empty($db[1]) || empty($db[2]) || empty($db[3])){
-                $this->error('请填写完整的数据库配置');
-            } else {
-                $DB = array();
-                list($DB['DB_TYPE'], $DB['DB_HOST'], $DB['DB_NAME'], $DB['DB_USER'], $DB['DB_PWD'],
-                    $DB['DB_PORT'], $DB['DB_PREFIX']) = $db;
-                //缓存数据库配置
-                cookie('db_config',$DB);
-
-                //创建数据库
-                $dbname = $DB['DB_NAME'];
-                unset($DB['DB_NAME']);
-
-                $db  = Db::getInstance($DB);
-
-                $sql = "CREATE DATABASE IF NOT EXISTS `{$dbname}` DEFAULT CHARACTER SET utf8";
-
-                try{
-                    $db->execute($sql);
-                }catch (\Think\Exception $e){
-                    if(strpos($e->getMessage(),'getaddrinfo failed')!==false){
-                        $this->error( '数据库服务器（数据库服务器IP） 填写错误。','很遗憾，创建数据库失败，失败原因');// 提示信息
-                    }
-                   if(strpos($e->getMessage(),'Access denied for user')!==false){
-                       $this->error('数据库用户名或密码 填写错误。','很遗憾，创建数据库失败，失败原因');// 提示信息
-                   }else{
-                       $this->error( $e->getMessage());// 提示信息
-                   }
-                }
-                session('step',2);
-                // $this->error($db->getError());exit;
-            }
-
-            //跳转到数据库安装页面
-            $this->redirect('step3');
-        } else {
-                session('error') && $this->error('环境检测没有通过，请调整环境后重试！');
-
-                $step = session('step');
-                if($step != 1 && $step != 2){
-                   // $this->redirect('step1');
-                }
-
-                session('step', 2);
-                $this->displayi(__FUNCTION__);
-
+           if(strpos($e->getMessage(),'Access denied for user')!==false){
+               $error['db'] = '数据库用户名或密码 填写错误。 很遗憾，创建数据库失败，失败原因';// 提示信息
+           }else{
+               $error['db'] = $e->getMessage();// 即使执行建立数据库语句也不会让我们创建数据库 会提示不存在数据的错误 安全机制
+           }
         }
+
+        $redisHost = I('post.dbhost');
+        C('REDIS_HOST',$redisHost);
+		C('REDIS_PORT',6379);
+		C('REDIS_TIMEOUT',30);
+		C('REDIS_DBNAME',0);
+		C('REDIS_CTYPE',1);
+        C('REDIS_PWD','');
+
+        try{
+            $redis = new RedisModel();
+            $redis -> getInstance(0);
+            if($redis->ping()){
+                $this->assign('redisError','链接 Redis 失败');
+            }
+        }catch(\Exception $e){
+            $redisError = $e->getMessage();
+            $error['redis'] = $redisError;
+        }
+
+        $this->assign('error',$error);
+
+        // if(empty($error)){
+        //     $dbSample = ROOT_APP."/Common/Conf/db-sample.php";
+        //     $targetPath = ROOT_APP."/Common/Conf/db.php";
+        //     (new BuildConfig())->setupConfig($dbSample ,$targetPath,array());
+        // }
+
+        $this->displayi(__FUNCTION__);
     }
 
     //安装第三步，安装数据表，创建配置文件
@@ -135,9 +128,5 @@ class InstallController extends BaseController{
         }
     }
 
-    public function error($info,$title='很遗憾，安装失败，失败原因'){
-        $this->assign('info',$info);// 提示信息
-        $this->assign('title',$title);
-        $this->displayi(__FUNCTION__);exit;
-    }
+
 }

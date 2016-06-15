@@ -7,7 +7,7 @@
 <block name="control">
 	<h4 class="text-primary">{$Think.lang.setData}</h4>
 	<form method="post" id="dataForm" class="form-horizontal" action="{:U('Install/Install/step',array('step'=>2))}" novalidate="novalidate">
-		<p>{$Think.lang.setIntroduction}</p>
+		<div class="alert alert-info" role="alert">{$Think.lang.setIntroduction}</div>
 		<div class="form-group has-feedback">
             <label class="col-lg-3 control-label">{$Think.lang.dataName}</label>
             <div class="col-lg-5">
@@ -32,7 +32,7 @@
                 <input type="text" class="form-control" name="dbhost" data-bv-field="dbhost" placeholder="{$Think.lang.host}">
              </div>
         </div>
-        <div class="form-group has-feedback">
+        <!-- <div class="form-group has-feedback">
             <label class="col-lg-3 control-label">{$Think.lang.domain}</label>
             <div class="col-lg-5">
                 <input type="text" class="form-control" name="domain" data-bv-field="domain" placeholder="{$Think.lang.domain}">
@@ -43,7 +43,7 @@
             <div class="col-lg-5">
                 <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="{$Think.lang.siteCode}">
              </div>
-        </div>
+        </div> -->
 		<p class="step">
 		<button type="submit" class="btn btn-primary">{$Think.lang.submit}</button></p>
 	</form>

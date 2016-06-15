@@ -2,7 +2,7 @@
 namespace Common\Check;
 
 class Check{
-	
+
 	// protected $useMysqli;
 
 	// public function __construct(){
@@ -18,7 +18,7 @@ class Check{
 		$items = array(
 			'os' => array('操作系统', '不限制', '类Unix', PHP_OS, 'success'),
 			'php' => array('PHP版本', '5.4', '5.4+', PHP_VERSION, 'success'),
-	        //'mysql'   => array('MYSQL版本', '5.4', '5.4+', '未知', 'success'), 
+	        //'mysql'   => array('MYSQL版本', '5.4', '5.4+', '未知', 'success'),
 			'upload' => array('附件上传', '不限制', '2M+', '未知', 'success'),
 			'gd' => array('GD库', '2.0', '2.0+', '未知', 'success'),
 			'curl' => array('Curl扩展', '开启', '不限制', '未知', 'success'),
@@ -148,7 +148,7 @@ class Check{
 			case 'mysqli_connect':
 				$this->useMysqli = true;
 				break;
-			
+
 			default:
 				$this->useMysqli = false;
 				break;
