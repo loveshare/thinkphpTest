@@ -5,58 +5,79 @@ use Think\Storage;  //文件操作库
 
 class BuildConfig{
 
-    /**
-    * 生成配置文件
-    */
    //Storage::has
    //Storage::put
    //Storage::read
-    public function setupConfig($sameplePath='' ,$targetPath='' ,array $List){
+   /**
+    * 生成配置文件
+    * @param  string $sameplePath 源文件
+    * @param  string $targetPath  目标文件
+    * @param  array  $List        要过滤的数据
+    * @param  string $type        array define
+    * @return boole  
+    */
+    public function setupConfig($sameplePath='' ,$targetPath='' ,array $List ,$type='array'){
+        if(empty($List))
+            E('要替换的字符不能为空');
 
         if(Storage::has($sameplePath))
-            $configFile = Storage::read($sameplePath);
+            $configFile = file($sameplePath);
         else
-            E($sameplePath."不存在");
-        if(Storage::has($targetPath))
-            E($targetPath."已经存在");
+            E('源文件不存在');
+
+        // if(Storage::has($targetPath))
+        //     E('目标文件已存在');
+
+        if( $type == 'array')
+            $pregString = '/^\'([A-Z_]+)\'([ ]+)=>/';
+        else
+            $pregString = '/^define\(\'([A-Z_]+)\',([ ]+)/';
+
+        $setFuc = $type. 'ConfigSet';
+        $keys = array_keys($List);
 
         foreach ( $configFile as $lineNum => $line ) {
-    		if ( '$table_prefix  =' == substr( $line, 0, 16 ) ) {
-    			$configFile[ $lineNum ] = '$table_prefix  = \'' . addcslashes( $prefix, "\\'" ) . "';\r\n";
-    			continue;
-    		}
 
-    		if ( ! preg_match( '/^define\(\'([A-Z_]+)\',([ ]+)/', $line, $match ) )
+    		if ( ! preg_match( $pregString, $line, $match ) )
     			continue;
 
     		$constant = $match[1];
     		$padding  = $match[2];
 
-    		switch ( $constant ) {
-    			case 'DB_NAME'     :
-    			case 'DB_USER'     :
-    			case 'DB_PASSWORD' :
-    			case 'DB_HOST'     :
-    				$configFile[ $lineNum ] = "define('" . $constant . "'," . $padding . "'" . addcslashes( constant( $constant ), "\\'" ) . "');\r\n";
-    				break;
-    			case 'DB_CHARSET'  :
-    				if ( 'utf8mb4' === $wpdb->charset || ( ! $wpdb->charset && $wpdb->has_cap( 'utf8mb4' ) ) ) {
-    					$config_file[ $line_num ] = "define('" . $constant . "'," . $padding . "'utf8mb4');\r\n";
-    				}
-    				break;
-    			case 'AUTH_KEY'         :
-    			case 'SECURE_AUTH_KEY'  :
-    			case 'LOGGED_IN_KEY'    :
-    			case 'NONCE_KEY'        :
-    			case 'AUTH_SALT'        :
-    			case 'SECURE_AUTH_SALT' :
-    			case 'LOGGED_IN_SALT'   :
-    			case 'NONCE_SALT'       :
-    				$configFile[ $lineNum ] = "define('" . $constant . "'," . $padding . "'" . $secret_keys[$key++] . "');\r\n";
-    				break;
-    		}
+            if(!in_array($constant,$keys))
+                continue;
+
+            $configFile[ $lineNum ] = $this->$setFuc($constant, $padding, $List[$constant]);
     	}
-    	Storage::put($targetPath,$configFile);
+    	if(Storage::put($targetPath,$configFile)){
+            return true;
+            chmod( $targetPath, 0777 );
+        }
+
+        E('生成配置文件失败');
+
+    }
+
+    /**
+     * 生成数组配置文件操作类
+     * @param  string $constant 目标字符
+     * @param  string $padding 空格
+     * @param  array $replace     替换的字符
+     * @return string
+     */
+    private function arrayConfigSet($constant,$padding,$replace){
+        return  "'". $constant ."'".$padding."=> ".$padding."'". $replace ."',\r\n";
+    }
+
+    /**
+     * 生成常量配置文件操作类
+     * @param  string $constant 目标字符
+     * @param  string $padding 空格
+     * @param  array $replace     替换的字符
+     * @return string
+     */
+    private function defineConfigSet($constant,$padding,$replace){
+        return "define('" . $constant . "'," . $padding . "'" . $replace . "');\r\n";
     }
 
 
