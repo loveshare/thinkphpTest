@@ -56,8 +56,8 @@ class InstallController extends BaseController{
         $DB['DB_PWD'] = $passWord;
         //创建数据库
         $dbname = $DB['DB_NAME'];
-        cookie('db_config',$DB);
         unset($DB['DB_NAME']);
+        cookie('db_config',$DB);
 
         try{
             $sql = "CREATE DATABASE IF NOT EXISTS `{$dbname}` DEFAULT CHARACTER SET utf8";
@@ -123,9 +123,8 @@ class InstallController extends BaseController{
         $domain = I('post.domain');
         $siteCode = I('post.siteCode');
         $error = array();
-echo 111;
+
         if($domain && $siteCode){
-            echo 111;
             //$this->displayi(__FUNCTION__);
 
                 //连接数据库
@@ -139,6 +138,7 @@ echo 111;
                     $error['db'] = $e->getMessage();
                 }
 
+                print_r();
                 //注册创始人帐号
                 //$auth  = build_auth_key();
                 //$admin = session('admin_info');
