@@ -5,16 +5,16 @@ namespace Base\Model;
 use Think\Model;
 use Think\Storage;
 use Think\Hook;
-use Common\Traits\FunctionTrait;
+use Common\Traits\ClassTrait;
 
 class BaseModel extends Model {
     use ClassTrait;
 
     protected $classType = 'Model';
-    
+
     protected $_validatei = array();	//默认自动验证
     protected $_autoi = array();	//默认自动完成
-    
+
     /**
      * 创建数据对象 但不保存到数据库
      * @access public
