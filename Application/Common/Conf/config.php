@@ -3,8 +3,9 @@
 define('__NAME__', '测试工程');
 define('__VERSION__', '1.1.1');
 define('__WEBSITE__', 'http://www.lawuyou.com');
+$site = include('siteCode.php');
 
-return array(
+$conf = array(
 	'LOAD_EXT_CONFIG' => 'db,email',
 	'OUTPUT_ENCODE' =>  true,
 	'COOKIE_PATH' => '/', // Cookie路径
@@ -19,3 +20,5 @@ return array(
     // 0 (普通模式); 1 (PATHINFO 模式); 2 (REWRITE  模式); 3 (兼容模式)  默认为PATHINFO 模式
     'URL_HTML_SUFFIX' =>  '',  // URL伪静态后缀设置
 );
+
+return array_merge($conf, $site);
