@@ -52,10 +52,8 @@ class BaseController extends Controller {
     protected function displayi($templateFile='',$charset='',$contentType='',$content='',$prefix=''){
 
         if(defined('TMPL_PATH')){
-
-            $this->viewi = $this->status;
-            $this->viewi = $this->message;
-
+            // $this->viewi = $this->status;
+            // $this->viewi = $this->message;
             $this->viewi->displayi($templateFile,$charset,$contentType,$content,$prefix);
         }
 
