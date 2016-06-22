@@ -20,5 +20,8 @@ return array(
 	'noempty' => '不能为空',
 	'preg_w' => '只能包含字母,数字和_',
 	'noValidate' => '这个选项未通过验证',
-	
+	'email' => '邮箱',
+	'siteName' => '站点名',
+	'emailValidate' => '邮箱地址格式不正确',
+
 );

@@ -1,12 +1,11 @@
 <?php
-
 namespace Common\Model\User;
-use Base\Model\BaseModel;
+//use Base\Model\BaseModel;
 
 /**
  * 权限比对类
  */
-class RoleModel extends BaseModel{
+class RoleModel{
 	private $role = array(
 		'user' =>0,
 		'author' =>10,

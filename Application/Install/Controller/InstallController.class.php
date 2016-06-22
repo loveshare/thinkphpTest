@@ -1,12 +1,4 @@
 <?php
-// +----------------------------------------------------------------------
-// | OneThink [ WE CAN DO IT JUST THINK IT ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2013 http://www.onethink.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
-// +----------------------------------------------------------------------
-
 namespace Install\Controller;
 use Base\Controller\BaseController;
 use Think\Storage;
@@ -14,6 +6,7 @@ use Think\Db;
 //use Common\Check\Check;
 use Common\Model\File\BuildConfig;
 use Common\Model\Memory\RedisModel;
+use Common\Model\User\RoleModel;
 
 class InstallController extends BaseController{
 
@@ -56,8 +49,8 @@ class InstallController extends BaseController{
         $DB['DB_PWD'] = $passWord;
         //创建数据库
         $dbname = $DB['DB_NAME'];
-        unset($DB['DB_NAME']);
         cookie('db_config',$DB);
+        unset($DB['DB_NAME']);
 
         try{
             $sql = "CREATE DATABASE IF NOT EXISTS `{$dbname}` DEFAULT CHARACTER SET utf8";
@@ -105,7 +98,7 @@ class InstallController extends BaseController{
                 'REDIS_HOST' => $redisHost,
             );
             try{
-                $configStatus = (new BuildConfig())->setupConfig($dbSample ,$targetPath,$List);
+                $configStatus = $this->getBuildConfig()->setupConfig($dbSample ,$targetPath,$List);
                 if(!$configStatus)
                     $error['config'] = '创建配置文件失败';
             }catch(\Exception $e){
@@ -120,12 +113,15 @@ class InstallController extends BaseController{
 
     //安装第三步，安装数据表，创建配置文件
     private function step3(){
+
         $domain = I('post.domain');
         $siteCode = I('post.siteCode');
+        $uname = I('post.uname');
+        $passWord = I('post.passWord');
+        $email = I('post.email');
         $error = array();
 
-        if($domain && $siteCode){
-            //$this->displayi(__FUNCTION__);
+        if($domain && $siteCode && $uname && $passWord){
 
                 //连接数据库
                 $dbconfig = cookie('db_config');
@@ -133,32 +129,60 @@ class InstallController extends BaseController{
 
                 //创建数据表
                 try{
-                    create_tables($db);
+                    createTables($db);
                 }catch(\Exception $e){
                     $error['db'] = $e->getMessage();
                 }
 
-                print_r();
-                //注册创始人帐号
-                //$auth  = build_auth_key();
-                //$admin = session('admin_info');
-                //register_administrator($db, $dbconfig['DB_PREFIX'], $admin, $auth);
+                $role = (new RoleModel())->supRole();
 
-                //创建配置文件
-                //$conf   =   write_config($dbconfig, $auth);
-                //session('config_file',$conf);
+                $userSql = "INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`status`,`roles`)
+                VALUES ('{$siteCode}','{$uname}','{$passWord}','{$uname}',1,'{$role}');";
 
-                echo "<script type=\"text/javascript\">setTimeout(function(){location.href='".U('Index/complete')."'},5000)</script>";
-                ob_flush();
-                flush();
+                try{
+                    $db->execute($userSql);
+                }catch(\Exception $e){
+                    $error['user'] = $e->getMessage();
+                }
+
+                $systemSql = "INSERT INTO `system` (`systemName`,`email`)
+                VALUES ('{$siteName}','{$email}');";
+
+                try{
+                    $db->execute($systemSql);
+                }catch(\Exception $e){
+                    $error['system'] = $e->getMessage();
+                }
+
+                $siteSql = "INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`)
+                VALUES ('{$siteCode}','{$siteName}','{$domain}','{$email}',1,'site');";
+
+                try{
+                    $db->execute($siteSql);
+                }catch(\Exception $e){
+                    $error['site'] = $e->getMessage();
+                }
+
+                //siteCode.php system.php siteConfig.php
+
         }else{
-            if(!domain)
+            if(!$domain)
                 $error['domain'] = $domain;
-            if(!siteCode)
+            if(!$siteCode)
                 $error['siteCode'] = $siteCode;
+            if(!$uname)
+                $error['uname'] = $uname;
+            if(!$passWord)
+                $error['passWord'] = $passWorde;
             $this->displayi(__FUNCTION__);
         }
 
+        print_r($error);
+
+    }
+
+    private function getBuildConfig(){
+        return (new BuildConfig());
     }
 
 

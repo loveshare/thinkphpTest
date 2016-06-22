@@ -9,12 +9,12 @@ class BuildConfig{
    //Storage::put
    //Storage::read
    /**
-    * 生成配置文件
+    * 根据模板生成配置文件
     * @param  string $sameplePath 源文件
     * @param  string $targetPath  目标文件
     * @param  array  $List        要过滤的数据
     * @param  string $type        array define
-    * @return boole  
+    * @return boole
     */
     public function setupConfig($sameplePath='' ,$targetPath='' ,array $List ,$type='array'){
         if(empty($List))
@@ -25,9 +25,6 @@ class BuildConfig{
         else
             E('源文件不存在');
 
-        // if(Storage::has($targetPath))
-        //     E('目标文件已存在');
-
         if( $type == 'array')
             $pregString = '/^\'([A-Z_]+)\'([ ]+)=>/';
         else
@@ -35,6 +32,9 @@ class BuildConfig{
 
         $setFuc = $type. 'ConfigSet';
         $keys = array_keys($List);
+
+        if(empty($List))
+            E('数据不能为空');
 
         foreach ( $configFile as $lineNum => $line ) {
 
@@ -50,12 +50,48 @@ class BuildConfig{
             $configFile[ $lineNum ] = $this->$setFuc($constant, $padding, $List[$constant]);
     	}
     	if(Storage::put($targetPath,$configFile)){
-            return true;
             chmod( $targetPath, 0777 );
+            return true;
         }
 
         E('生成配置文件失败');
 
+    }
+
+    /**
+     * 根据数据生成配置文件
+     * @param  string $targetPath [description]
+     * @param  string $key        [description]
+     * @param  array  $List       [description]
+     * @param  string $type       [description]
+     * @return bool
+     */
+    public function createConfig($targetPath='' ,$key='', array $List ,$type='array' ){
+        if(empty($List))
+            E('要替换的字符不能为空');
+
+        if(empty($key))
+            E('索引不能为空');
+
+        if(empty($List))
+            E('数据不能为空');
+
+        $data = '<?php';
+        $setFuc = $type. 'ConfigSet';
+        $data .= $type=='array' ? "return array(\r\n" : '';
+        
+        foreach ($List as $k => $v) {
+            $data .= $setFuc($key, ' ', $v[$key]);
+        }
+
+        $data .= $type=='array' ? ")" : '';
+
+        if(Storage::put($targetPath,$configFile)){
+            chmod( $targetPath, 0777 );
+            return true;
+        }
+
+        E('生成配置文件失败');
     }
 
     /**
@@ -65,7 +101,7 @@ class BuildConfig{
      * @param  array $replace     替换的字符
      * @return string
      */
-    private function arrayConfigSet($constant,$padding,$replace){
+    private function arrayConfigSet($constant,$padding=" ",$replace){
         return  "'". $constant ."'".$padding."=> ".$padding."'". $replace ."',\r\n";
     }
 
@@ -76,7 +112,7 @@ class BuildConfig{
      * @param  array $replace     替换的字符
      * @return string
      */
-    private function defineConfigSet($constant,$padding,$replace){
+    private function defineConfigSet($constant,$padding=" ",$replace){
         return "define('" . $constant . "'," . $padding . "'" . $replace . "');\r\n";
     }
 

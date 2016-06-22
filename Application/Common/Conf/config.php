@@ -3,9 +3,10 @@
 define('__NAME__', '测试工程');
 define('__VERSION__', '1.1.1');
 define('__WEBSITE__', 'http://www.lawuyou.com');
-$site = include('siteCode.php');
+define('SERVER_NAME', $_SERVER['SERVER_NAME']);
+$site = include('site.php');
 
-$conf = array(
+return array(
 	'LOAD_EXT_CONFIG' => 'db,email',
 	'OUTPUT_ENCODE' =>  true,
 	'COOKIE_PATH' => '/', // Cookie路径

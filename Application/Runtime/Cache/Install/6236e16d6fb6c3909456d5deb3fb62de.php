@@ -81,6 +81,30 @@
                             <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="<?php echo (L("siteCode")); ?>">
                          </div>
                     </div>
+					<div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label"><?php echo (L("userName")); ?></label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="uname" data-bv-field="uname" placeholder="<?php echo (L("userName")); ?>">
+			             </div>
+			        </div>
+			        <div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label"><?php echo (L("passWord")); ?></label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="passWord" data-bv-field="passWord" placeholder="<?php echo (L("passWord")); ?>">
+			             </div>
+			        </div>
+					<div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label"><?php echo (L("email")); ?></label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="email" data-bv-field="email" placeholder="<?php echo (L("email")); ?>">
+			             </div>
+			        </div>
+					<div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label"><?php echo (L("siteName")); ?></label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="siteName" data-bv-field="siteName" placeholder="<?php echo (L("siteName")); ?>">
+			             </div>
+			        </div>
                     <p class="step">
                     <button type="submit" class="btn btn-primary"><?php echo (L("submit")); ?></button></p>
                     </p>
@@ -117,6 +141,7 @@
 		var noempty = '<?php echo (L("noempty")); ?>';
 		var preg_w = '<?php echo (L("preg_w")); ?>';
 		var noValidate = '<?php echo (L("noValidate")); ?>';
+		var emailValidate = '<?php echo (L("emailValidate")); ?>';
 		<?php $publicScript[] = 'js/installStep1'; ?>
 	</script>
 

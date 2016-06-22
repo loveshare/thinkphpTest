@@ -10,6 +10,91 @@ function user_md5($str, $key = '')
     return '' === $str ? '' : md5(sha1($str));
 }
 
+/*
+ * 时间转换
+ */
+function timeFilter($time) {
+    $diff = time() - $time;
+    if ($diff < 0) {
+        return '未来';
+    }
+
+    if ($diff == 0) {
+        return '刚刚';
+    }
+
+    if ($diff < 60) {
+        return $diff . '秒前';
+    }
+
+    if ($diff < 3600) {
+        return round($diff / 60) . '分钟前';
+    }
+
+    if ($diff < 86400) {
+        return round($diff / 3600) . '小时前';
+    }
+
+    if ($diff < 2592000) {
+        return round($diff / 86400) . '天前';
+    }
+
+    if ($diff < 31536000) {
+        return date('m-d', $time);
+    }
+
+    return date('Y-m-d', $time);
+}
+
+/**
+ * 获取客户端操作系统
+ */
+function getplat() {
+    $agent = $_SERVER['HTTP_USER_AGENT'];
+    $os = false;
+
+    if (eregi('win', $agent)) {
+        $os = 'Windows';
+    } else if (eregi('linux', $agent)) {
+        $os = 'Linux';
+    } else if (eregi('unix', $agent)) {
+        $os = 'Unix';
+    } else if (eregi('sun', $agent) && eregi('os', $agent)) {
+        $os = 'SunOS';
+    } else if (eregi('ibm', $agent) && eregi('os', $agent)) {
+        $os = 'IBM OS/2';
+    } else if (eregi('Mac', $agent) && eregi('PC', $agent)) {
+        $os = 'Macintosh';
+    } else if (eregi('PowerPC', $agent)) {
+        $os = 'PowerPC';
+    } else if (eregi('AIX', $agent)) {
+        $os = 'AIX';
+    } else if (eregi('HPUX', $agent)) {
+        $os = 'HPUX';
+    } else if (eregi('NetBSD', $agent)) {
+        $os = 'NetBSD';
+    } else if (eregi('BSD', $agent)) {
+        $os = 'BSD';
+    } else if (ereg('OSF1', $agent)) {
+        $os = 'OSF1';
+    } else if (ereg('IRIX', $agent)) {
+        $os = 'IRIX';
+    } else if (eregi('FreeBSD', $agent)) {
+        $os = 'FreeBSD';
+    } else if (eregi('teleport', $agent)) {
+        $os = 'teleport';
+    } else if (eregi('flashget', $agent)) {
+        $os = 'flashget';
+    } else if (eregi('webzip', $agent)) {
+        $os = 'webzip';
+    } else if (eregi('offline', $agent)) {
+        $os = 'offline';
+    } else {
+        $os = 'Unknown';
+    }
+    return $os;
+}
+
 /**
  * 及时显示提示信息
  * @param  string $msg 提示信息

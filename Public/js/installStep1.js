@@ -59,6 +59,23 @@
                     }
                 }
             },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: noempty
+                    },
+                    emailAddress: {
+                        message: emailValidate
+                    }
+                }
+            },
+            siteName: {
+                validators: {
+                    notEmpty: {
+                        message: noempty
+                    }
+                }
+            }
         }
     });
 })(jQuery);

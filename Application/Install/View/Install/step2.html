@@ -19,6 +19,30 @@
                             <input type="text" class="form-control" name="siteCode" data-bv-field="siteCode" placeholder="{$Think.lang.siteCode}">
                          </div>
                     </div>
+					<div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label">{$Think.lang.userName}</label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="uname" data-bv-field="uname" placeholder="{$Think.lang.userName}">
+			             </div>
+			        </div>
+			        <div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label">{$Think.lang.passWord}</label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="passWord" data-bv-field="passWord" placeholder="{$Think.lang.passWord}">
+			             </div>
+			        </div>
+					<div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label">{$Think.lang.email}</label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="email" data-bv-field="email" placeholder="{$Think.lang.email}">
+			             </div>
+			        </div>
+					<div class="form-group has-feedback">
+			            <label class="col-lg-3 control-label">{$Think.lang.siteName}</label>
+			            <div class="col-lg-5">
+			                <input type="text" class="form-control" name="siteName" data-bv-field="siteName" placeholder="{$Think.lang.siteName}">
+			             </div>
+			        </div>
                     <p class="step">
                     <button type="submit" class="btn btn-primary">{$Think.lang.submit}</button></p>
                     </p>
@@ -38,6 +62,7 @@
 		var noempty = '{$Think.lang.noempty}';
 		var preg_w = '{$Think.lang.preg_w}';
 		var noValidate = '{$Think.lang.noValidate}';
+		var emailValidate = '{$Think.lang.emailValidate}';
 		<assign name="publicScript[]" value="js/installStep1" />
 	</script>
 </block>

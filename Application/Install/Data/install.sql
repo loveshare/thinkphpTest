@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : 本地
 Source Server Version : 50711
 Source Host           : localhost:3306
-Source Database       : data
+Source Database       : tk
 
 Target Server Type    : MYSQL
 Target Server Version : 50711
 File Encoding         : 65001
 
-Date: 2016-06-20 15:28:01
+Date: 2016-06-20 16:08:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -22,6 +22,7 @@ DROP TABLE IF EXISTS `site`;
 CREATE TABLE `site` (
   `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
   `domain` char(50) NOT NULL COMMENT '域名',
   `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
   `email` char(50) NOT NULL COMMENT '管理员邮箱',
@@ -38,12 +39,29 @@ CREATE TABLE `site` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta`;
+CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表';
+
+-- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `system`
 -- ----------------------------
 DROP TABLE IF EXISTS `system`;
 CREATE TABLE `system` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `siteName` char(60) NOT NULL DEFAULT '' COMMENT '行为唯一标识',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
   `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
   `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
   `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
@@ -101,4 +119,53 @@ CREATE TABLE `theme` (
 
 -- ----------------------------
 -- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(180) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表';
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta`;
+CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表';
+
+-- ----------------------------
+-- Records of user_meta
 -- ----------------------------
