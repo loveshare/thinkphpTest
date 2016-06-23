@@ -6,7 +6,7 @@ define('__WEBSITE__', 'http://www.lawuyou.com');
 define('SERVER_NAME', $_SERVER['SERVER_NAME']);
 $site = include('site.php');
 
-return array(
+$conf = array(
 	'LOAD_EXT_CONFIG' => 'db,email',
 	'OUTPUT_ENCODE' =>  true,
 	'COOKIE_PATH' => '/', // Cookie路径

@@ -37,3 +37,5 @@ if(!empty($siteCodeArr)){
 
 	return array($system, $option, $siteSet, $siteMeta);
 }
+
+return array();

@@ -43,7 +43,7 @@ class Model {
     // 实际数据表名（包含表前缀）
     protected $trueTableName    =   '';
     // 最近错误信息
-    public $error            =   '';
+    protected $error            =   '';
     // 字段信息
     protected $fields           =   array();
     // 数据信息

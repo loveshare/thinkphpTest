@@ -1,18 +1,15 @@
 <?php
 namespace Base\Model;
 
-//use Think\Model\AdvModel;
-use Think\Model;
-//use Think\Storage;
-//use Think\Hook;
 use Common\Traits\ClassTrait;
 
-class BaseModel extends Model {
-    use ClassTrait;
+class BaseClass{
+	use ClassTrait;
 
-    protected $classType = 'Model';
+	protected $classType = 'Class';
+    public $error = '';
 
-    /**
+	/**
      * 返回模型的错误信息
      * @access public
      * @return string
@@ -20,5 +17,4 @@ class BaseModel extends Model {
     public function &getError(){
         return $this->error;
     }
-
 }

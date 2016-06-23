@@ -5,7 +5,7 @@ namespace Common\Model\User;
 /**
  * 权限比对类
  */
-class RoleModel{
+class Role{
 	private $role = array(
 		'user' =>0,
 		'author' =>10,

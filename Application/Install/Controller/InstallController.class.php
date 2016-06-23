@@ -134,16 +134,16 @@ class InstallController extends BaseController{
                     $error['db'] = $e->getMessage();
                 }
 
-                $role = (new RoleModel())->supRole();
-
-                $userSql = "INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`status`,`roles`)
-                VALUES ('{$siteCode}','{$uname}','{$passWord}','{$uname}',1,'{$role}');";
-
-                try{
-                    $db->execute($userSql);
-                }catch(\Exception $e){
-                    $error['user'] = $e->getMessage();
+                $this->getUserService()->addSupUserData(I('post.'));
+                echo $this->getError();
+                exit;
+                //->addSupUserData(I('post.'));
+                if($this->getError()){
+                    $error['user'] = $this->getError();
                 }
+                // }catch(\Exception $e){
+                //     $error['user'] = $e->getMessage();
+                // }
 
                 $systemSql = "INSERT INTO `system` (`systemName`,`email`)
                 VALUES ('{$siteName}','{$email}');";
@@ -183,6 +183,10 @@ class InstallController extends BaseController{
 
     private function getBuildConfig(){
         return (new BuildConfig());
+    }
+
+    private function getUserService(){
+        return $this->createService('User.ServerModel');
     }
 
 

@@ -20,7 +20,7 @@ class BaseController extends Controller {
 
     protected $classType = 'Controller';
 
-    protected $error = '';
+    public $error = '';
     // protected $status = 'success';
     // protected $message = 'success';
 
