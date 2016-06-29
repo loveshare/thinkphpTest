@@ -129,41 +129,35 @@ class InstallController extends BaseController{
 
                 //创建数据表
                 try{
-                    createTables($db);
+                    $createTable = createTables($db);
                 }catch(\Exception $e){
                     $error['db'] = $e->getMessage();
                 }
 
-                $this->getUserService()->addSupUserData(I('post.'));
-                echo $this->getError();
-                exit;
-                //->addSupUserData(I('post.'));
-                if($this->getError()){
-                    $error['user'] = $this->getError();
-                }
-                // }catch(\Exception $e){
-                //     $error['user'] = $e->getMessage();
-                // }
+                $userService = $this->getUserService();
+                $supUser = $userService->addSupUserData(I('post.'));
+                if($userService->getError())
+                    $error['user'] = $userService->getError();
 
-                $systemSql = "INSERT INTO `system` (`systemName`,`email`)
-                VALUES ('{$siteName}','{$email}');";
+                $systemService = $this->getSystemService();
+                $system = $systemService->addData(I('post.'));
+                if($systemService->getError())
+                    $error['system'] = $systemService->getError();
 
-                try{
-                    $db->execute($systemSql);
-                }catch(\Exception $e){
-                    $error['system'] = $e->getMessage();
-                }
-
-                $siteSql = "INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`)
-                VALUES ('{$siteCode}','{$siteName}','{$domain}','{$email}',1,'site');";
-
-                try{
-                    $db->execute($siteSql);
-                }catch(\Exception $e){
-                    $error['site'] = $e->getMessage();
-                }
+                $siteService = $this->getSiteService();
+                $site = $siteService->installData(I('post.'));
+                if($siteService->getError())
+                    $error['site'] = $siteService->getError();
 
                 //siteCode.php system.php siteConfig.php
+
+                if($system){
+                    $systemConfig = $systemService->createConfig();
+                }
+                if($site){
+                    $siteConfig = $siteService->createSiteConfig();
+                    $siteCode = $siteService->createSiteCodeConfig();
+                }
 
         }else{
             if(!$domain)
@@ -174,19 +168,27 @@ class InstallController extends BaseController{
                 $error['uname'] = $uname;
             if(!$passWord)
                 $error['passWord'] = $passWorde;
-            $this->displayi(__FUNCTION__);
         }
 
         print_r($error);
+        //$this->displayi(__FUNCTION__);
 
     }
 
     private function getBuildConfig(){
-        return (new BuildConfig());
+        return $this->newClass('File.BuildConfig');
     }
 
     private function getUserService(){
-        return $this->createService('User.ServerModel');
+        return $this->newClass('User.Server');
+    }
+
+    private function getSystemService(){
+        return $this->newClass('System.Server');
+    }
+
+    private function getSiteService(){
+        return $this->newClass('Site.Server');
     }
 
 

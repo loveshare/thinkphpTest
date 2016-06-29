@@ -20,12 +20,12 @@ class BaseController extends Controller {
 
     protected $classType = 'Controller';
 
-    public $error = '';
+    //public $error = '';
     // protected $status = 'success';
     // protected $message = 'success';
 
     /**
-     * 架构函数 取得模板对象实例
+     * 构造函数 取得模板对象实例
      * @access public
      */
     public function __construct() {
@@ -138,7 +138,7 @@ class BaseController extends Controller {
 	 * @param  string  $goto     消息跳转的页面
 	 * @return Response
 	 */
-	public function createMeseage($status='success', $message='', $title = '',$goto = null) {
+	protected function createMeseage($status='success', $message='', $title = '',$goto = null) {
 
 		$mold = array('info', 'warning', 'error', 'success');
 		$status = in_array($status, $mold) ? $status : 'success';
@@ -154,11 +154,7 @@ class BaseController extends Controller {
 		// $this->status = $status;
         // $this->message = $message;
 		//$this->display('./Template/Public/menu.html');
-		if($this->classType == 'Controller'){
-			return $this->displayi('Home@Default:message');
-		}else{
-			return E($message);
-		}
+		return $this->displayi('Home@Default:message');
 	}
 
     /**
@@ -166,7 +162,7 @@ class BaseController extends Controller {
      * @access public
      * @return string
      */
-    public function getError(){
-        return $this->error;
-    }
+    // public function getError(){
+    //     return $this->error;
+    // }
 }

@@ -1,2 +1,27 @@
 <?php
-return array();
+return array(
+'id' =>  '1',
+'systemName' =>  '啦唔呦',
+'email' =>  '1028290810@qq.com',
+'siteKey' =>  '',
+'siteDes' =>  '',
+'listNum' =>  '12',
+'plTime' =>  '0',
+'loginKeyOk' =>  '1',
+'loginNum' =>  '0',
+'addNewsOk' =>  '0',
+'registerOk' =>  '0',
+'registerStart' =>  '0',
+'smallTextLen' =>  '100',
+'keyBgColor' =>  '#FF0000',
+'keyFontColor' =>  '#FF0000',
+'keyDistColor' =>  '#FF0000',
+'plOk' =>  '1',
+'plKeyOk' =>  '1',
+'plNum' =>  '8',
+'gbOk' =>  '1',
+'gbKeyOk' =>  '1',
+'gbNum' =>  '8',
+'theme' =>  'Default',
+'logo' =>  '',
+);

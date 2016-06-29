@@ -1,0 +1,3788 @@
+[ 2016-06-29T09:29:31+08:00 ] 127.0.0.1 /install.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.018807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-06-29T09:29:34+08:00 ] 127.0.0.1 /install.php/Install/step/step/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000229s ]
+
+[ 2016-06-29T09:29:45+08:00 ] 127.0.0.1 /install.php/Install/step/step/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+NOTIC: [8] Undefined index: db_name /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 68 行.
+SQL: CREATE DATABASE IF NOT EXISTS `thinkphp1` DEFAULT CHARACTER SET utf8 [ RunTime:0.0400s ]
+NOTIC: [2] Missing argument 1 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 80 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 80 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 3 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 80 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 4 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 80 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [8] Undefined variable: host /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 38 行.
+NOTIC: [8] Undefined variable: port /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: timeout /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 40 行.
+NOTIC: [8] Undefined variable: auth /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 43 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 3 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [2] Missing argument 4 for Common\Model\Memory\RedisModel::__construct(), called in /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php on line 56 and defined /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 36 行.
+NOTIC: [8] Undefined variable: host /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 38 行.
+NOTIC: [8] Undefined variable: port /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 39 行.
+NOTIC: [8] Undefined variable: timeout /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 40 行.
+NOTIC: [8] Undefined variable: auth /home/wwwroot/thinkphp/Application/Common/Model/Memory/RedisModel.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2016-06-29T09:29:59+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0267s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.1027s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.1088s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0342s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0505s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0254s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0667s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0586s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0670s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2511s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3512s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2344s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3430s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0270s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.1660s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0005s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0112s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0124s ]
+ERR: Class '\Common\Model\Site\SiteConf' not found
+
+[ 2016-06-29T09:31:29+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0000s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0405s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0503s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0253s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0505s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0252s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0593s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2010s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3349s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.3093s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.5688s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0347s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0005s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+ERR: Class '\Common\Model\Site\SiteConf' not found
+
+[ 2016-06-29T09:32:27+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0000s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0306s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.1005s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0338s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0333s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0254s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0669s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2847s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3516s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2008s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3109s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0277s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0005s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0243s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+ERR: Call to a member function createSiteConfig() on null
+
+[ 2016-06-29T09:33:28+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0348s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0253s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0253s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0504s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2016s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3180s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2427s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.4014s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0004s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0003s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+ERR: Call to undefined method Common\Model\System\SystemConf::createSiteConfig()
+
+[ 2016-06-29T09:34:02+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0333s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0590s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0251s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0505s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0252s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2009s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3263s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.1926s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3601s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0004s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0212s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 10 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-06-29T09:40:55+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0399s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0841s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0670s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0420s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0673s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0334s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0585s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.1927s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.2685s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.4595s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3514s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467164455') [ RunTime:0.0548s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0007s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0745s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 10 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000259s ]
+
+[ 2016-06-29T09:41:09+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0000s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0233s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0510s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0253s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0758s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.1345s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0673s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0669s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2260s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3766s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2340s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.2770s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467164469') [ RunTime:0.0632s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0009s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0646s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0325s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 10 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2016-06-29T09:42:45+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0000s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0321s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0670s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0755s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0421s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0751s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2010s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3262s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2427s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3262s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467164564') [ RunTime:0.0629s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0665s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0005s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0491s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-06-29T09:43:22+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0485s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0670s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0419s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.1171s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0335s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0335s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.1006s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2011s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3931s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2349s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3430s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467164602') [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0826s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0006s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-06-29T09:43:47+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0000s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0559s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0420s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0419s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2344s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3600s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2256s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3351s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467164627') [ RunTime:0.0877s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0824s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000278s ]
+
+[ 2016-06-29T09:45:14+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0000s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0320s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0335s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0585s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0338s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.1084s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2012s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3183s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2433s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3179s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467164714') [ RunTime:0.0621s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0911s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0007s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2016-06-29T09:48:20+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0319s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0335s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2099s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3348s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2758s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3427s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467164900') [ RunTime:0.0715s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0659s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0006s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-06-29T09:50:26+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0430s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0420s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0335s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0335s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0758s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2340s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.2763s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2261s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.4519s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467165026') [ RunTime:0.0797s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0816s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0741s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+ERR: Call to undefined method Common\Model\Site\Server::getLastSql()
+
+[ 2016-06-29T09:51:00+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0919s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0425s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0756s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0419s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2010s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.2846s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2182s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3757s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0303s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467165060') [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0743s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 53 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0327s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-06-29T09:51:44+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0461s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0764s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0334s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0585s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2010s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.2929s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2014s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.4344s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0011s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467165104') [ RunTime:0.0863s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0006s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.1073s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0005s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 54 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: siteCode /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 89 行.
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2016-06-29T09:55:00+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0365s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0668s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0343s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0667s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0590s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0334s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0668s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2345s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3764s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2424s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3012s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467165300') [ RunTime:0.0634s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.1079s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0005s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 54 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sitecode /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteConf.class.php 第 11 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2016-06-29T09:55:45+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0300s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0673s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0587s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0335s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0753s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2343s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3185s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2761s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3262s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0004s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467165345') [ RunTime:0.0636s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0006s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0656s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 54 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0325s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0003s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2016-06-29T09:57:21+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0001s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0345s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0590s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.1001s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0670s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0340s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0834s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2177s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3519s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2010s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3263s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467165441') [ RunTime:0.0634s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0012s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.0649s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0006s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 54 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000246s ]
+
+[ 2016-06-29T10:02:57+08:00 ] 127.0.0.1 /install.php/Install/step/step/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+NOTIC: [8] Undefined index: db_port /home/wwwroot/thinkphp/ThinkPHP/Library/Think/Db.class.php 第 67 行.
+SQL: /*
+Navicat MySQL Data Transfer
+
+Source Server         : 本地
+Source Server Version : 50711
+Source Host           : localhost:3306
+Source Database       : tk
+
+Target Server Type    : MYSQL
+Target Server Version : 50711
+File Encoding         : 65001
+
+Date: 2016-06-20 16:08:23
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [ RunTime:0.0000s ]
+SQL: -- ----------------------------
+-- Table structure for `site`
+-- ----------------------------
+DROP TABLE IF EXISTS `site` [ RunTime:0.0563s ]
+SQL: CREATE TABLE `site` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
+  `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
+  `domain` char(50) NOT NULL COMMENT '域名',
+  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `email` char(50) NOT NULL COMMENT '管理员邮箱',
+  `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
+  `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
+  `province` int(6) NOT NULL DEFAULT 110000 COMMENT '省',
+  `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
+  `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
+  `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
+  `industryId` char(50) NOT NULL COMMENT '行业',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表' [ RunTime:0.0672s ]
+SQL: -- ----------------------------
+-- Records of site
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `site_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `site_meta` [ RunTime:0.0417s ]
+SQL: CREATE TABLE `site_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteId` tinyint(1) unsigned NOT NULL COMMENT '站点id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置扩展表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of site_meta
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system`
+-- ----------------------------
+DROP TABLE IF EXISTS `system` [ RunTime:0.0337s ]
+SQL: CREATE TABLE `system` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `systemName` char(30) NOT NULL DEFAULT '' COMMENT '系统名',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '站点邮箱管理员邮箱',
+  `siteKey` char(255) NOT NULL DEFAULT '' COMMENT '网站关键字',
+  `siteDes` char(255) NOT NULL DEFAULT '' COMMENT '网站简介',
+  `listNum` int(2) NOT NULL DEFAULT '12' COMMENT '里表页显示数量',
+  `plTime` int(10) NOT NULL DEFAULT '0' COMMENT '评论间隔时间，单位秒',
+  `loginKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启会员登陆验证码1为开启,0为关闭',
+  `loginNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '账户登录次数限制',
+  `addNewsOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启投稿功能0为开启，1为关闭',
+  `registerOk` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为开启，1为关闭',
+  `registerStart` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否开启会员注册0为审核，1为直接通过',
+  `smallTextLen` tinyint(3) NOT NULL DEFAULT '100' COMMENT '信息简介截取字数',
+  `keyBgColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyFontColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码文字颜色',
+  `keyDistColor` char(7) NOT NULL DEFAULT '#FF0000' COMMENT '验证码干扰颜色',
+  `plOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论1为开启，0为关闭',
+  `plKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启评论验证码1为开启，0为关闭',
+  `plNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '评论列表每页显示数量',
+  `gbOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言1为开启，0为关闭',
+  `gbKeyOk` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否开启留言验证码1为开启，0为关闭',
+  `gbNum` tinyint(4) NOT NULL DEFAULT '8' COMMENT '留言列表每页显示数量',
+  `theme` char(50) NOT NULL DEFAULT 'Default' COMMENT '模板',
+  `logo` char(255) NOT NULL DEFAULT '' COMMENT 'logo',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统总设置' [ RunTime:0.0588s ]
+SQL: -- ----------------------------
+-- Records of system
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `system_opetion`
+-- ----------------------------
+DROP TABLE IF EXISTS `system_opetion` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `system_opetion` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系统扩展表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of system_opetion
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `theme`
+-- ----------------------------
+DROP TABLE IF EXISTS `theme` [ RunTime:0.0336s ]
+SQL: CREATE TABLE `theme` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `themeName` char(50) NOT NULL COMMENT '模板名',
+  `themeSetting` longblob NOT NULL COMMENT '模板设置',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='模板设置表' [ RunTime:0.0671s ]
+SQL: -- ----------------------------
+-- Records of theme
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user` [ RunTime:0.2010s ]
+SQL: CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码，这里作为注册来源',
+  `userName` char(30) NOT NULL DEFAULT '' COMMENT '用户名',
+  `passWord` char(32) NOT NULL COMMENT '用户密码',
+  `niceName` char(50) NOT NULL DEFAULT '' COMMENT '昵称',
+  `status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0未激活 1正常 2锁定',
+  `email` char(50) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `emailStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '邮箱状态',
+  `mobile` char(32) NOT NULL DEFAULT '' COMMENT '手机',
+  `mobileStatus` tinyint(1) NOT NULL DEFAULT '0' COMMENT '手机状态',
+  `avartar` char(255) NOT NULL DEFAULT '' COMMENT '头像',
+  `regdate` int(10) NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `newPlNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新评论数量',
+  `newGbNum` smallint(6) unsigned NOT NULL DEFAULT '0' COMMENT '新留言数目',
+  `roles` varchar(255) NOT NULL DEFAULT '' COMMENT '用户角色',
+  `point` int(11) NOT NULL DEFAULT '0' COMMENT '积分',
+  `coin` int(11) NOT NULL DEFAULT '0' COMMENT '金币',
+  `money` int(11) NOT NULL DEFAULT '0' COMMENT '钱',
+  `lockTime` int(10) NOT NULL DEFAULT '0' COMMENT '帐号锁定期限',
+  `passErrorNum` tinyint(1) NOT NULL DEFAULT '0' COMMENT '帐号密码错误次数',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户表' [ RunTime:0.3514s ]
+SQL: -- ----------------------------
+-- Records of user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `user_meta`
+-- ----------------------------
+DROP TABLE IF EXISTS `user_meta` [ RunTime:0.2009s ]
+SQL: CREATE TABLE `user_meta` (
+  `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `uId` tinyint(1) unsigned NOT NULL COMMENT '用户id',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
+  `key` char(15) NOT NULL COMMENT '键名',
+  `value` char(255) NOT NULL DEFAULT '' COMMENT '值',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户扩展表' [ RunTime:0.3687s ]
+SQL: -- ----------------------------
+-- Records of user_meta
+-- ---------------------------- [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0005s ]
+NOTIC: [8] Only variables should be passed by reference /home/wwwroot/thinkphp/Application/Common/Model/User/Role.class.php 第 102 行.
+SQL: INSERT INTO `user` (`siteCode`,`userName`,`passWord`,`niceName`,`email`,`status`,`regdate`) VALUES ('www','lawuyou1','8528e1aeb3d7df4cc0f4d77d2762d4c5','lawuyou1','1028290810@qq.com','1','1467165777') [ RunTime:0.0799s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0005s ]
+SQL: INSERT INTO `system` (`systemName`,`email`) VALUES ('啦唔呦','1028290810@qq.com') [ RunTime:0.1165s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0004s ]
+NOTIC: [2] array_merge_recursive(): Argument #2 is not an array /home/wwwroot/thinkphp/Application/Common/Model/Site/SiteModel.class.php 第 52 行.
+SQL: INSERT INTO `site` (`siteCode`,`siteName`,`domain`,`email`,`adminCenter`,`industryId`) VALUES ('www','啦唔呦','www.lawuyou.com','1028290810@qq.com','1','site') [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `system` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `system` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+NOTIC: [2] Missing argument 1 for Common\Model\Site\Server::createSiteConfig(), called in /home/wwwroot/thinkphp/Application/Install/Controller/InstallController.class.php on line 158 and defined /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 24 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' /home/wwwroot/thinkphp/Application/Common/Model/Site/Server.class.php 第 31 行.
+SQL: SELECT * FROM `site` WHERE `locked` = 0  [ RunTime:0.0002s ]
+NOTIC: [2] chmod(): Operation not permitted /home/wwwroot/thinkphp/Application/Common/Model/File/BuildConfig.class.php 第 96 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+

@@ -133,6 +133,8 @@
 		var noempty = '<?php echo (L("noempty")); ?>';
 		var preg_w = '<?php echo (L("preg_w")); ?>';
 		var noValidate = '<?php echo (L("noValidate")); ?>';
+		var preg_w_wn = '<?php echo (L("preg_w_wn")); ?>';
+		var maxLength30 = '<?php echo (L("maxLength30")); ?>';
 		<?php $publicScript[] = 'js/installStep1'; ?>
 	</script>
 

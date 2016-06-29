@@ -358,3 +358,14 @@ function isSsl() {
 	return false;
 }
 //$schema = is_ssl() ? 'https://' : 'http://';
+
+function getHost($url){
+    if(!filter_var($url,FILTER_VALIDATE_URL))
+        return '';
+
+    $data = parse_url($url);
+    if(!empty($data['host']))
+        return $data['host'];
+
+    return '';
+}

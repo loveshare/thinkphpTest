@@ -3,7 +3,7 @@ $siteCodeArr = include('siteCode.php');
 
 if(!empty($siteCodeArr)){
 	define('SUP_SITE_CODE', current(array_values($siteCodeArr)));
-	$siteCode = $siteCodeArr[SERVER_NAME] ?: SUP_SITE_CODE;
+	$siteCode = $siteCodeArr[$_SERVER[‘SERVER_NAME’]] ?: SUP_SITE_CODE;
 	define('SITE_CODE', $siteCode);
 
 	$siteFile = 'SiteConfig/'.$siteCode.'.php';

@@ -20,6 +20,10 @@ $conf = array(
     'URL_MODEL' =>  1, // URL访问模式,可选参数0、1、2、3,代表以下四种模式：
     // 0 (普通模式); 1 (PATHINFO 模式); 2 (REWRITE  模式); 3 (兼容模式)  默认为PATHINFO 模式
     'URL_HTML_SUFFIX' =>  '',  // URL伪静态后缀设置
+	'LOG_RECORD'=>true,  // 进行日志记录
+    'LOG_RECORD_LEVEL'       =>   array('EMERG','ALERT','CRIT','ERR','WARN','NOTIC','INFO','DEBUG','SQL'),  // 允许记录的日志级别
+    'DB_FIELDS_CACHE'=> false, //数据库字段缓存
+	'DB_PARAMS' => array(\PDO::ATTR_CASE => \PDO::CASE_NATURAL),//禁用数据转小写 
 );
 
 return array_merge($conf, $site);

@@ -1,2 +1,4 @@
 <?php
-return array();
+return array(
+'www.lawuyou.com' =>  'www',
+);

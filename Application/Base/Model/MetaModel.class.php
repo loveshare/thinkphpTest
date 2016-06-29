@@ -15,7 +15,7 @@ class BaseModel extends BaseModel {
      * @param bool   $unique     Optional, default is false.
      * @return int|false The meta ID on success, false on failure.
      */
-    function addMetadata($objectId, $metaKey, $metaValue,$siteCode) {
+    public function addMetadata($objectId, $metaKey, $metaValue,$siteCode) {
 
     	if ( ! $meta_type || ! $metaKey || ! is_numeric( $objectId ) ) {
     		return false;
@@ -50,7 +50,7 @@ class BaseModel extends BaseModel {
      * @param sting $siteCode
      * @return int|bool
      */
-    function updateMetadata($objectId, $metaKey, $metaValue,$siteCode='') {
+    public function updateMetadata($objectId, $metaKey, $metaValue,$siteCode='') {
 
     	if ( ! $metaKey || ! is_numeric( $objectId ) ) {
     		return false;
@@ -86,7 +86,7 @@ class BaseModel extends BaseModel {
      * @param sting $siteCode
      * @return bool
      */
-    function deleteMetadata($objectId, $metaKey, $metaValue = '',$siteCode) {
+    public function deleteMetadata($objectId, $metaKey, $metaValue = '',$siteCode) {
 
     	if ( ! $metaKey || ! is_numeric( $objectKd )) {
     		return false;
@@ -114,7 +114,7 @@ class BaseModel extends BaseModel {
      * @param sting $siteCode
      * @return string
      */
-    function getMetadata($objectid, $metaKey = '',$siteCode='') {
+    public function getMetadata($objectid, $metaKey = '',$siteCode='') {
     	if ( ! $metaKey || ! is_numeric( $objectId ) ) {
     		return false;
     	}
@@ -141,7 +141,7 @@ class BaseModel extends BaseModel {
      * @param sting $siteCode
      * @return string
      */
-    function getMetaValue($objectid, $metaKey = '',$siteCode='') {
+    public function getMetaValue($objectid, $metaKey = '',$siteCode='') {
     	$result = $this->getMetadata($objectid, $metaKey,$siteCode);
         return $this->arrayColumnKey($result)['value'];
     }
@@ -154,7 +154,7 @@ class BaseModel extends BaseModel {
      * @param sting $siteCode
      * @return mixed
      */
-    function getMetaValues($objectid, $metaKeyList='',$siteCode='') {
+    public function getMetaValues($objectid, $metaKeyList='',$siteCode='') {
     	if ( ! $metaKey || ! is_numeric( $objectId ) ) {
     		return false;
     	}
@@ -179,7 +179,7 @@ class BaseModel extends BaseModel {
     	return $result ? $this->arrayColumnKey($result) : $result;
     }
 
-    function arrayColumnKey($input){
+    private function arrayColumnKey($input){
         return array_column($input, 'value', 'key');
     }
 }

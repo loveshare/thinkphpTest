@@ -70,23 +70,29 @@ class BuildConfig{
         if(empty($List))
             E('要替换的字符不能为空');
 
-        if(empty($key))
-            E('索引不能为空');
+        // if(empty($key))
+        //     E('索引不能为空');
 
         if(empty($List))
             E('数据不能为空');
 
-        $data = '<?php';
+        $data = "<?php\r\n";
         $setFuc = $type. 'ConfigSet';
         $data .= $type=='array' ? "return array(\r\n" : '';
-        
-        foreach ($List as $k => $v) {
-            $data .= $setFuc($key, ' ', $v[$key]);
+
+        if(empty($key)){
+            foreach ($List as $k => $v) {
+                $data .= $this->$setFuc($k, ' ', $v);
+            }
+        }else{
+            foreach ($List as $k => $v) {
+                $data .= $this->$setFuc($v['domain'], ' ', $v[$key]);
+            }
         }
 
-        $data .= $type=='array' ? ")" : '';
+        $data .= $type=='array' ? ");" : '';
 
-        if(Storage::put($targetPath,$configFile)){
+        if(Storage::put($targetPath,$data)){
             chmod( $targetPath, 0777 );
             return true;
         }

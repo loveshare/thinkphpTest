@@ -6,8 +6,10 @@ use Common\Traits\ClassTrait;
 class BaseClass{
 	use ClassTrait;
 
-	protected $classType = 'Class';
+	public $classType = 'Class';
+	protected $parameter;
     public $error = '';
+	protected $instance;
 
 	/**
      * 返回模型的错误信息

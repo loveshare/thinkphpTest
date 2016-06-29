@@ -13,9 +13,13 @@
                     notEmpty: {
                         message: noempty
                     },
+                    maxLength   : {
+                        max: 30,
+                        message: maxLength30
+                    },
                     regexp: {
-                        regexp: /^[a-zA-Z0-9_]+$/,
-                        message: preg_w
+                        regexp: /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9a-zA-Z_]+$/,
+                        message: preg_w_wn
                     }
                 }
             },
