@@ -121,6 +121,6 @@ class BuildConfig{
     private function defineConfigSet($constant,$padding=" ",$replace){
         return "define('" . $constant . "'," . $padding . "'" . $replace . "');\r\n";
     }
-
+    
 
 }

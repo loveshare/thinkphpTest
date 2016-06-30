@@ -1,4 +1,4 @@
 <?php
 return array(
-'www.lawuyou.com' =>  'www',
+'thinkphp' =>  'www',
 );

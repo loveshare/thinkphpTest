@@ -8,7 +8,7 @@ class IndexController extends BaseController{
 
     //安装
     public function index(){
-    
+
        if(is_file( APP_PATH.'/Conf/user.php')){
             $msg = L('install_del_lock');
         }else{

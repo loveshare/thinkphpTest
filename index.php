@@ -9,34 +9,18 @@
 //
 
 // 应用入口文件
-    
-require './headerFunction.php';
 
-// 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
-define('APP_DEBUG',True);
+if(!defined('ENTRY')){
+    require './headerFunction.php';
+    define('TMPL_PATH','./Template/');
+    define('ENTRY',basename(__FILE__));
+}
 
-// 定义应用目录
-$app = 'Application';
-define('APP_PATH','./'.$app.'/');
-
-define('_TMPL_PATH','./Template/');
-
-if (!isset($install) && !is_file( APP_PATH.'/Conf/user.php')) {
+if (!isset($install) && !is_file( APP_PATH.'/Common/Conf/install.local')) {
     header('Location: /install.php');
     exit;
 }
-//设置模板目录
-if(!defined('CHANGE_ENTRY')){
-	define('TMPL_PATH',_TMPL_PATH);
-}
-$entry = $entry?:basename(__FILE__);
-define('ENTRY',$entry);
 
-//$GLOBALS['rootPath'] = dirname(__FILE__);
-define('ROOT_PATH',dirname(__FILE__));
-
-//$GLOBALS['rootApp'] = dirname(__FILE__).'/'.$app;
-define('ROOT_APP',ROOT_PATH.'/'.$app);
 
 /**
  * 引入核心入口

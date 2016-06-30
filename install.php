@@ -8,14 +8,13 @@
 // +----------------------------------------------------------------------
 
 // 应用入口文件
+require './headerFunction.php';
 
 define('BIND_MODULE', 'Install');
 
-define('CHANGE_ENTRY',true);
-$entry = basename(__FILE__);
-//$GLOBALS['entry'] = basename(__FILE__);
+define('ENTRY',basename(__FILE__));
 
-if (is_file( APP_PATH.'/Conf/user.php')) {
+if (is_file( APP_PATH.'/Common/Conf/install.local')) {
     header('Location: ./index.php');
     exit;
 }

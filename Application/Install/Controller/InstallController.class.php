@@ -88,8 +88,8 @@ class InstallController extends BaseController{
         }
 
         if(empty($error)){
-            $dbSample = ROOT_APP."/Common/Conf/db-sample.php";
-            $targetPath = ROOT_APP."/Common/Conf/db.php";
+            $dbSample = APP_PATH."/Common/Conf/db-sample.php";
+            $targetPath = APP_PATH."/Common/Conf/db.php";
             $List = array(
                 'DB_HOST' => $dbhost,
                 'DB_NAME' => $dbname,
@@ -169,10 +169,8 @@ class InstallController extends BaseController{
             if(!$passWord)
                 $error['passWord'] = $passWorde;
         }
-
-        print_r($error);
-        //$this->displayi(__FUNCTION__);
-
+        if(empty($error))
+            if(Storage::put(APP_PATH."/Common/Conf/install.local",''));
     }
 
     private function getBuildConfig(){

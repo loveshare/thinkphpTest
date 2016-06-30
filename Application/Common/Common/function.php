@@ -9,6 +9,34 @@ function userMd5($str, $key = '')
 {
     return '' === $str ? '' : md5(sha1($str));
 }
+/**
+ * 判断是否是手机
+ * @staticvar bool $is_mobile
+ * @return bool
+ */
+function isMobile() {
+	static $isMobile = null;
+
+	if ( isset( $isMobile ) ) {
+		return $isMobile;
+	}
+
+	if ( empty($_SERVER['HTTP_USER_AGENT']) ) {
+		$isMobile = false;
+	} elseif ( strpos($_SERVER['HTTP_USER_AGENT'], 'Mobile') !== false // many mobile devices (all iPhone, iPad, etc.)
+		|| strpos($_SERVER['HTTP_USER_AGENT'], 'Android') !== false
+		|| strpos($_SERVER['HTTP_USER_AGENT'], 'Silk/') !== false
+		|| strpos($_SERVER['HTTP_USER_AGENT'], 'Kindle') !== false
+		|| strpos($_SERVER['HTTP_USER_AGENT'], 'BlackBerry') !== false
+		|| strpos($_SERVER['HTTP_USER_AGENT'], 'Opera Mini') !== false
+		|| strpos($_SERVER['HTTP_USER_AGENT'], 'Opera Mobi') !== false ) {
+			$isMobile = true;
+	} else {
+		$isMobile = false;
+	}
+
+	return $isMobile;
+}
 
 /*
  * 时间转换

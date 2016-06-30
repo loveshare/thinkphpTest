@@ -7,7 +7,7 @@ use Base\Model\BaseClass;
 class SiteConf extends BaseClass{
 
 	public function createSiteConfig(array $list, $buildConfig=null){
-		$systemPath = ROOT_APP."/Common/Conf/SiteConfig/{$list['siteCode']}.php";
+		$systemPath = APP_PATH."/Common/Conf/SiteConfig/{$list['siteCode']}.php";
 		$result = false;
 
 		try{
@@ -19,7 +19,7 @@ class SiteConf extends BaseClass{
 	}
 
 	public function createSiteCodeConfig(array $list, $buildConfig=null){
-		$systemPath = ROOT_APP."/Common/Conf/siteCode.php";
+		$systemPath = APP_PATH."/Common/Conf/siteCode.php";
 		$result = false;
 
 		try{

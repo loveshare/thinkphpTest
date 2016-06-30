@@ -7,7 +7,7 @@ use Base\Model\BaseClass;
 class SystemConf extends BaseClass{
 
 	public function createConfig(array $list, $buildConfig=null){
-		$systemPath = ROOT_APP."/Common/Conf/system.php";
+		$systemPath = APP_PATH."/Common/Conf/system.php";
 		$result = false;
 
 		try{

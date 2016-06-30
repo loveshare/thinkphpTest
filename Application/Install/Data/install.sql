@@ -25,7 +25,7 @@ CREATE TABLE `site` (
   `siteName` char(30) NOT NULL DEFAULT '' COMMENT '站点名',
   `locked` tinyint(1) NOT NULL DEFAULT '0' COMMENT '状态 0正常 1锁定',
   `domain` char(50) NOT NULL COMMENT '域名',
-  `theme` char(50) NOT NULL DEFAULT 'default' COMMENT '模板',
+  `theme` char(50) NOT NULL DEFAULT '' COMMENT '模板',
   `email` char(50) NOT NULL COMMENT '管理员邮箱',
   `sitekey` char(255) NOT NULL DEFAULT '' COMMENT '关键字',
   `siteintro` char(255) NOT NULL DEFAULT '' COMMENT '简介',
@@ -33,8 +33,9 @@ CREATE TABLE `site` (
   `city` int(6) NOT NULL DEFAULT 110000 COMMENT '市',
   `district` int(6) NOT NULL DEFAULT 0 COMMENT '县',
   `adminCenter` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为中心站',
+  `openRole` tinyint(1) NOT NULL DEFAULT '0' COMMENT '开放自主权限',
   `siteLogo` char(255) NOT NULL DEFAULT '' COMMENT '站点logo',
-  `industryId` char(50) NOT NULL COMMENT '行业',
+  `industryId` char(50) NOT NULL DEFAULT 'site' COMMENT '行业',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='系站点设置表';
 
@@ -116,6 +117,7 @@ CREATE TABLE `system_opetion` (
 DROP TABLE IF EXISTS `theme`;
 CREATE TABLE `theme` (
   `id` tinyint(1) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `siteCode` char(15) NOT NULL COMMENT '站点识别码',
   `themeName` char(50) NOT NULL COMMENT '模板名',
   `themeSetting` longblob NOT NULL COMMENT '模板设置',
   PRIMARY KEY (`id`)

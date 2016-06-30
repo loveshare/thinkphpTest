@@ -33,6 +33,7 @@ class SiteModel extends BaseModel{
 			'domain' => $data['domain'],
 			'email' => $data['email'],
 			'adminCenter' => 1,
+			'openRole' => 1,
 			'status' => 1,
 			'industryId' => 'site',
 		);

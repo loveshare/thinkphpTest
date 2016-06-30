@@ -16,26 +16,27 @@ if(!empty($siteCodeArr)){
 	$option = array();
 	$siteSet = array();
 	$siteMeta = array();
+	$theme = array();
 
-	if(file_exists('system.php'))
-		$system = include('system.php');
+	$system = @include('system.php');
 
-	if(file_exists('option.php'))
-		$option = include('option.php');
+	$option = @include('option.php');
 
-	if(file_exists($siteFile)){
-		$siteSet = include($siteFile);
-	}else{
-		$siteSet = include($supSiteFile);
-	}
+	$siteSet = @include($siteFile);
+	if(empty($siteSet))
+		$siteSet = @include($supSiteFile);
 
-	if(file_exists($codeMetaFile)){
-		$siteMeta = include($codeMetaFile);
-	}else{
-		$siteMeta = include($supCodeMetaFile);
-	}
+	$siteMeta = @include($codeMetaFile);
+	if(empty($siteMeta))
+		$siteMeta = @include($supCodeMetaFile);
 
-	return array($system, $option, $siteSet, $siteMeta);
+	$themeFile = 'Theme/'.$siteMeta['theme'].SITE_CODE.'.php';
+	$supThemeFile = 'Theme/'.$system['theme'].SUP_SITE_CODE.'.php';
+	$theme = @include($themeFile);
+	if(empty($theme))
+		$theme = @include($supThemeFile);
+
+	return array($system, $option, $siteSet, $siteMeta, $theme);
 }
 
 return array();
