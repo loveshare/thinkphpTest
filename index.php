@@ -12,7 +12,7 @@
 
 if(!defined('ENTRY')){
     require './headerFunction.php';
-    define('TMPL_PATH','./Template/');
+    define('TMPL_PATH',TMPL);
     define('ENTRY',basename(__FILE__));
 }
 

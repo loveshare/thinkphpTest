@@ -6,6 +6,11 @@ use Think\Storage;
 use Think\Hook;
 use Common\Traits\ClassTrait;
 
+$themeFuction = themePath().'function.php';
+
+if(is_file($themeFuction))
+    include($themeFuction);
+
 class BaseController extends Controller {
     use ClassTrait;
 
@@ -52,8 +57,6 @@ class BaseController extends Controller {
     protected function displayi($templateFile='',$charset='',$contentType='',$content='',$prefix=''){
 
         if(defined('TMPL_PATH')){
-            // $this->viewi = $this->status;
-            // $this->viewi = $this->message;
             $this->viewi->displayi($templateFile,$charset,$contentType,$content,$prefix);
         }
 

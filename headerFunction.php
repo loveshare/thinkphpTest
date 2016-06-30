@@ -10,6 +10,7 @@ header("Content-Type:text/html;charset=utf-8");
  define('APP_PATH','./Application/');
 
  define('APP_DEBUG',True);
+ define('TMPL','./Template/');
 
  //define('ROOT_PATH',dirname(__FILE__));
 

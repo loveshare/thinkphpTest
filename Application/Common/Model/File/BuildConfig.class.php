@@ -66,7 +66,7 @@ class BuildConfig{
      * @param  string $type       [description]
      * @return bool
      */
-    public function createConfig($targetPath='' ,$key='', array $List ,$type='array' ){
+    public function createConfig($targetPath='' ,$key='', array $List ,$type='array', $filterEmpty=true ){
         if(empty($List))
             E('要替换的字符不能为空');
 
@@ -82,10 +82,14 @@ class BuildConfig{
 
         if(empty($key)){
             foreach ($List as $k => $v) {
+                if($filterEmpty && $v)
+                    continue;
                 $data .= $this->$setFuc($k, ' ', $v);
             }
         }else{
             foreach ($List as $k => $v) {
+                if($filterEmpty && $v[$key])
+                    continue;
                 $data .= $this->$setFuc($v['domain'], ' ', $v[$key]);
             }
         }
@@ -121,6 +125,6 @@ class BuildConfig{
     private function defineConfigSet($constant,$padding=" ",$replace){
         return "define('" . $constant . "'," . $padding . "'" . $replace . "');\r\n";
     }
-    
+
 
 }

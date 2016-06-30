@@ -9,6 +9,20 @@ function userMd5($str, $key = '')
 {
     return '' === $str ? '' : md5(sha1($str));
 }
+
+/**
+ * 获取模板路径 在后台和者前台试用
+ * @param  string $theme
+ * @return string
+ */
+function themePath($theme=''){
+    // 获取当前主题名称
+    $theme = $theme ?: C('theme');
+    $path = TMPL.$theme.'/';
+
+    return $path;
+}
+
 /**
  * 判断是否是手机
  * @staticvar bool $is_mobile
@@ -121,17 +135,6 @@ function getplat() {
         $os = 'Unknown';
     }
     return $os;
-}
-
-/**
- * 及时显示提示信息
- * @param  string $msg 提示信息
- */
-function show_msg($msg, $class = '')
-{
-    echo "<script type=\"text/javascript\">showmsg(\"{$msg}\", \"{$class}\")</script>";
-    ob_flush();
-    flush();
 }
 
 /**

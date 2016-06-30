@@ -12,12 +12,6 @@ if(!empty($siteCodeArr)){
 	$supSiteFile = 'SiteConfig/'.SUP_SITE_CODE.'.php';
 	$supCodeMetaFile = 'SiteMeta/'.SUP_SITE_CODE.'.php';
 
-	$system = array();
-	$option = array();
-	$siteSet = array();
-	$siteMeta = array();
-	$theme = array();
-
 	$system = @include('system.php');
 
 	$option = @include('option.php');
@@ -36,7 +30,13 @@ if(!empty($siteCodeArr)){
 	if(empty($theme))
 		$theme = @include($supThemeFile);
 
-	return array($system, $option, $siteSet, $siteMeta, $theme);
+	$system = $system ?: array();
+	$option = $option ?: array();
+	$siteSet = $siteSet ?: array();
+	$siteMeta = $siteMeta ?: array();
+	$theme = $theme ?: array();
+	
+	return array_merge($system, $option, $siteSet, $siteMeta, $theme);
 }
 
 return array();

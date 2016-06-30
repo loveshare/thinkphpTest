@@ -23,7 +23,7 @@ $conf = array(
 	'LOG_RECORD'=>true,  // 进行日志记录
     'LOG_RECORD_LEVEL'       =>   array('EMERG','ALERT','CRIT','ERR','WARN','NOTIC','INFO','DEBUG','SQL'),  // 允许记录的日志级别
     'DB_FIELDS_CACHE'=> false, //数据库字段缓存
-	'DB_PARAMS' => array(\PDO::ATTR_CASE => \PDO::CASE_NATURAL),//禁用数据转小写 
+	'DB_PARAMS' => array(\PDO::ATTR_CASE => \PDO::CASE_NATURAL),//禁用数据转小写
 );
 
 return array_merge($conf, $site);
